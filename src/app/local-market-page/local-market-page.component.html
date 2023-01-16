@@ -1,0 +1,54 @@
+<body onload="LocalMarketPageLoadFunction()">
+  <div class="topic" id="topicId">
+    <h1 id="topicHead"></h1>
+  </div>
+  <div>
+    <img src="/assets/images/localMpic.png" alt="local-market image" class="localImage">
+  </div>
+
+  <table class="sideTable">
+    <tr>
+      <td><button id="homeId" class="sideButton"></button></td>
+    </tr>
+    <tr>
+      <td><button id="registerId" class="sideButton" (click)="CallRegisterProfileClick()"></button></td>
+    </tr>
+    <tr>
+      <td><button id="loginId" class="sideButton" (click)="CallLoginPageFunctionClick()"></button></td>
+    </tr>
+    <tr>
+      <td><button id="localBrokerId" class="sideButton" (click)="CallLocalBrokerPageFunctionClick()"></button></td>
+    </tr>
+    <tr>
+      <td><button id="globalBrokerId" class="sideButton" (click)="CallGlobalBrokerPageFunctionClick()"></button></td>
+    </tr>
+    <tr>
+      <td><button id="historyId" class="sideButton" (click)="CallHistoryPageFunctionClick()"></button></td>
+    </tr>
+    <tr>
+      <td><button id="PersonalId" class="sideButton" (click)="CallPersonalProfileFunctionClick()"></button></td>
+    </tr>
+  </table>
+
+  <div>
+    <table class="provinceTable" id="provinceIdTable">
+      <tr>
+        <td><button id="central" class="provinceButton"></button></td>
+        <td><button id="northCentral" class="provinceButton"></button></td>
+        <td><button id="northern" class="provinceButton"></button></td>
+      </tr>
+
+      <tr>
+        <td><button id="eastern" class="provinceButton"></button></td>
+        <td><button id="northWestern" class="provinceButton"></button></td>
+        <td><button id="southern" class="provinceButton"></button></td>
+      </tr>
+
+      <tr>
+        <td><button id="uva" class="provinceButton"></button></td>
+        <td><button id="sabaragamuwa" class="provinceButton"></button></td>
+        <td><button id="western" class="provinceButton"></button></td>
+      </tr>
+    </table>
+  </div>
+</body>

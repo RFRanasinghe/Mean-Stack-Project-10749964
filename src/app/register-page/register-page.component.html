@@ -1,0 +1,72 @@
+<body onload="RegisterLoadFunction()">
+  <div class="topicContainer" id="topicContainerId">
+    <h1 id="registerTopic"></h1>
+  </div>
+
+  <table class="sideTable">
+    <tr>
+      <td><button id="homeId" class="sideButton" (click)="CallHomeClickPageFunction()"></button></td>
+    </tr>
+    <tr>
+      <td><button id="registerId" class="sideButton" (click)="CallRegisterAlertFunction()"></button></td>
+    </tr>
+    <tr>
+      <td><button id="loginId" class="sideButton" (click)="CallLoginPageFunctionClick()"></button></td>
+    </tr>
+    <tr>
+      <td><button id="localBrokerId" class="sideButton" (click)="CallLocalBrokerPageFunctionClick()"></button></td>
+    </tr>
+    <tr>
+      <td><button id="globalBrokerId" class="sideButton" (click)="CallGlobalBrokerPageFunctionClick()"></button></td>
+    </tr>
+    <tr>
+      <td><button id="historyId" class="sideButton" (click)="CallHistoryPageFunctionClick()"></button></td>
+    </tr>
+    <tr>
+      <td><button id="PersonalId" class="sideButton" (click)="CallPersonalProfileFunctionClick()"></button></td>
+    </tr>
+  </table>
+
+  <div>
+    <form name="registerForm">
+      <table class="formTable" id="formTableId">
+        <tr>
+          <td><label id="fname" class="label"></label></td>
+          <td><label id="lname" class="label"></label></td>
+        </tr>
+        <tr>
+          <td><input type="text" placeholder="First Name" class="input" id="firstName" name="firstName" [(ngModel)] = "fName"><p id="fnameError"></p></td>
+          <td><input type="text" placeholder="Last Name" class="input" id="lastName" name="lastName"><p id="lnameError"></p></td>
+        </tr>
+
+        <tr>
+          <td><label id="mail" class="label"></label></td>
+          <td><label id="uname" class="label"></label></td>
+        </tr>
+        <tr>
+          <td><input type="text" placeholder="Email Address" class="input" id="mailInput" name="email"><p id="mailError"></p></td>
+          <td><input type="text" placeholder="Username" class="input" id="usernameInput" name="userName"><p id="usernameError"></p></td>
+        </tr>
+
+        <tr>
+          <td><label id="address" class="label"></label></td>
+        </tr>
+        <tr>
+          <td><input type="text" placeholder="Address" class="input" id="addressInput" name="address"><p id="addressError"></p></td>
+        </tr>
+
+        <tr>
+          <td><label id="city" class="label"></label></td>
+          <td><label id="country" class="label"></label></td>
+          <td><label id="postalCode" class="label"></label></td>
+        </tr>
+        <tr>
+          <td><input type="text" placeholder="City" class="input" id="cityInput" name="city"><p id="cityError"></p></td>
+          <td><input type="text" placeholder="Country" class="input" id="countryInput" name="state"><p id="stateError"></p></td>
+          <td><input type="text" placeholder="Postal Code" class="input" id="postalInput" name="postal"><p id="postalError"></p></td>
+        </tr>
+      </table>
+    </form>
+    <button id="submitButton" (click)="CallRegisterFormValidation()"></button><p id="submitMessage"></p>
+  </div>
+</body>

@@ -1,0 +1,16 @@
+.sideTable{
+  border-spacing: 34px;
+  background-color: rgb(0, 0, 0);
+}
+.sideButton{
+  width: 100%;
+  padding: 20px;
+  font-size: 24px;
+  border-radius: 15px;
+  background-color: rgb(207, 10, 10);
+  border-color: rgb(207, 10, 10);
+  color: rgb(238, 238, 238);
+}
+.dataTable{
+  margin-left: 400px;
+}
