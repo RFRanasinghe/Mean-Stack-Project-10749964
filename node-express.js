@@ -14,11 +14,7 @@ app.use(function (req, res, next) {
   next();
 });
 
-app.get('/api/check', (req, res) => {
-  res.status(200).send('Welcome to MongoDB API')
-  console.log('check')
-})
-
+ 
 //retrieving localBroker Details
 app.get('/api/localBroker', (req, res) => {
   database.collection('localBrokerTable').find({}).toArray((err, result) => {

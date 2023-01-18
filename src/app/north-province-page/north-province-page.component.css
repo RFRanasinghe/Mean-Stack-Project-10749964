@@ -1,0 +1,21 @@
+#NorthContainer{
+  padding:8px;
+}
+#SubContainer{
+  padding:10px;
+  margin-left: 500px;
+}
+#companyTopic{
+  font-size:32px;
+}
+.northImage{
+  margin-top:-68px;
+}
+#sogoContainer{
+  padding:8px;
+}
+#SogoId{
+  margin-left: 500px;
+  width:67.1%;
+  font-size:24px;
+}

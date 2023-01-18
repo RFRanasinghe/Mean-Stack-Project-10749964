@@ -16,6 +16,7 @@ import { PersonalProfilePageComponent } from './personal-profile-page/personal-p
 import { LocalMarketPageComponent } from './local-market-page/local-market-page.component';
 import { GlobalMarketPageComponent } from './global-market-page/global-market-page.component';
 import { WesternProvincePageComponent } from './western-province-page/western-province-page.component';
+import { NorthProvincePageComponent } from './north-province-page/north-province-page.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { WesternProvincePageComponent } from './western-province-page/western-pr
     LocalMarketPageComponent,
     GlobalMarketPageComponent,
     WesternProvincePageComponent,
+    NorthProvincePageComponent,
   ],
   imports: [
     FormsModule,
@@ -46,7 +48,8 @@ import { WesternProvincePageComponent } from './western-province-page/western-pr
       { path: 'personal-profile-page', component: PersonalProfilePageComponent},
       { path: 'local-market-page', component: LocalMarketPageComponent},
       { path: 'global-market-page', component: GlobalMarketPageComponent },
-      { path: 'western-province-page', component: WesternProvincePageComponent},
+      { path: 'western-province-page', component: WesternProvincePageComponent },
+      { path: 'north-province-page', component: NorthProvincePageComponent},
     ]),
   ],
   providers: [],
