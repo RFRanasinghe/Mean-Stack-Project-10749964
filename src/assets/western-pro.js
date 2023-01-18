@@ -4,6 +4,7 @@ function WesternProContentFunction()
   document.getElementById("westernMainTopic").innerHTML = "Western Province";
   document.getElementById("aliyaButtonShow").innerHTML = "Aliya Clothing Company";
   document.getElementById("mimosaShowButton").innerHTML = "Mimosa Clothing Company";
+  document.getElementById("subTopic").innerHTML = "Wester Province-Clothing Companies";
 
   //background color
   document.getElementById("westernContainer").style.backgroundColor = "#083C5A";

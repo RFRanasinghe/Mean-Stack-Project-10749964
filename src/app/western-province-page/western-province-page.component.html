@@ -4,7 +4,7 @@
   </div>
 
   <div id="companyContainer" class="topicClass">
-    <h2>Wester Province-Clothing Companies</h2>
+    <h2 id="subTopic"></h2>
   </div>
 
   <div>
@@ -63,5 +63,29 @@
 
   <div>
     <button id="mimosaShowButton" class="mimosaShowClass"></button>
+  </div>
+
+  <div>
+    <table mat-table class="mimosaTable">
+      <tr id="aliyaHeading">
+        <th>Category</th>
+        <th>Number of Types</th>
+        <th>Selling Price</th>
+        <th>Stock per month</th>
+        <th>Company outcome</th>
+        <th>Company income</th>
+        <th>Company profit</th>
+      </tr>
+
+      <tr *ngFor="let mimosa of mList">
+        <td>{{mimosa.mimosa_category}}</td>
+        <td style="text-align:center">{{mimosa.m_num_of_colors}}</td>
+        <td><span>{{mimosa.mimosa_selling_price}}</span></td>
+        <td><span>{{mimosa.mimosa_stock_per_month}}</span></td>
+        <td><span>{{mimosa.mimosa_outcome_price}}</span></td>
+        <td><span>{{mimosa.mimosa_income_price}}</span></td>
+        <td><span>{{mimosa.mimosa_profit}}</span></td>
+      </tr>
+    </table>
   </div>
 </body>

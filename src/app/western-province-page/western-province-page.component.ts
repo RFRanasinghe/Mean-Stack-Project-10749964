@@ -13,10 +13,12 @@ export class WesternProvincePageComponent {
 
   oList: any;
   aList: any;
+  mList: any;
 
   constructor(private apiService: ApiService) {
     this.getOdelList()
     this.getAliyaList()
+    this.getMimosaList()
   }
 
   getOdelList() {              //odel list
@@ -33,7 +35,21 @@ export class WesternProvincePageComponent {
     })
   }
 
-  getAliyaList() {        //aliya list
+  getAliyaList() {        //mimosa list
+    this.apiService.getWesternMimosa().subscribe({
+      complete: () => {
+
+      },
+      error: (error) => {
+        console.log(error)
+      },
+      next:(value)=> {
+        this.mList = value
+      },
+    })
+  }
+
+  getMimosaList() {
     this.apiService.getWesternAliya().subscribe({
       complete: () => {
 
@@ -46,6 +62,7 @@ export class WesternProvincePageComponent {
       },
     })
   }
+
   //load page content function
   CallWesternProContentFunction() {
     WesternProContentFunction();

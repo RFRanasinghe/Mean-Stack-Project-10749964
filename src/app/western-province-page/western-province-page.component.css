@@ -54,3 +54,15 @@ td {
     padding: 10px;
     font-size: 24px;
 }
+.mimosaTable{
+  margin-top: 40px;
+  margin-left: 6%;
+}
+.mimosaTable th,
+td {
+  padding-top: 5px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 40px;
+  text-align: center;
+}
