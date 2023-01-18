@@ -14,6 +14,11 @@ private url = 'http://localhost:8080/api';
     return this.httpClient.get(this.url+'/localBroker').pipe(map(data=>data))
   }
 
+  getWesternOdel() {
+    return this.httpClient.get(this.url+'/localMarket/WesternProvince/Odel').pipe(map(data=>data))
+  }
+
+
 
   register(data: any) {
     return this.httpClient.post(this.url+'/register',data).pipe(map(data=>data))

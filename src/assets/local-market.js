@@ -19,7 +19,6 @@ function LocalMarketPageLoadFunction()
     document.getElementById("western").innerHTML="Western Province";
 
     //background colors
-    document.getElementById("provinceIdTable").style.backgroundColor="#00ABB3"; // table
     document.getElementById("central").style.backgroundColor="#3C4048"; //buttons
     document.getElementById("northCentral").style.backgroundColor="#3C4048";
     document.getElementById("northern").style.backgroundColor="#3C4048";
@@ -29,10 +28,11 @@ function LocalMarketPageLoadFunction()
     document.getElementById("uva").style.backgroundColor="#3C4048";
     document.getElementById("sabaragamuwa").style.backgroundColor="#3C4048";
     document.getElementById("western").style.backgroundColor="#3C4048";
-    document.getElementById("topicId").style.backgroundColor="#FF7B54";
+    document.getElementById("topicId").style.backgroundColor = "#FF7B54";
   }
          window.onload = LocalMarketPageLoadFunction;
-//           Button click event
+
+         //           Button click event
 //button click directs to the Register Profile page
 function RegisterProfileClick() {
   window.location.href="/register-page";
@@ -61,4 +61,134 @@ function HistoryPageFunctionClick() {
 //button click directs to the personalProfile Page
 function PersonalProfileFunctionClick() {
   window.location.href="/personal-profile-page";
+}
+
+//mouse over function
+function HomeMouseOver() {
+  document.getElementById("homeId").style.backgroundColor = "#E6A400";
+}
+function RegisterMouseOver() {
+  document.getElementById("registerId").style.backgroundColor = "#E6A400";
+}
+
+function LoginMouseOver() {
+  document.getElementById("loginId").style.backgroundColor = "#E6A400";
+}
+
+function LocalBrokerMouseOver() {
+  document.getElementById("localBrokerId").style.backgroundColor = "#E6A400";
+}
+
+function GlobalBrokerMouseOver() {
+  document.getElementById("globalBrokerId").style.backgroundColor = "#E6A400";
+}
+
+function HistoryMouseOver() {
+  document.getElementById("historyId").style.backgroundColor = "#E6A400";
+}
+
+function PersonalMouseOver() {
+  document.getElementById("PersonalId").style.backgroundColor = "#E6A400";
+}
+
+//      mouse over function for province table
+function CentralMouseOver() {
+  document.getElementById("central").style.backgroundColor="#00ABB3"; // table
+}
+
+function northCentralMouseOver() {
+  document.getElementById("northCentral").style.backgroundColor="#00ABB3";
+}
+
+function northernMouseOver() {
+  document.getElementById("northern").style.backgroundColor="#00ABB3";
+}
+
+function easternMouseOver() {
+  document.getElementById("eastern").style.backgroundColor="#00ABB3";
+}
+
+function northWesternMouseOver() {
+  document.getElementById("northWestern").style.backgroundColor="#00ABB3";
+}
+
+function southernMouseOver() {
+  document.getElementById("southern").style.backgroundColor = "#00ABB3";
+}
+
+function uvaMouseOver() {
+  document.getElementById("uva").style.backgroundColor="#00ABB3";
+}
+
+function sabaMouseOver() {
+  document.getElementById("sabaragamuwa").style.backgroundColor="#00ABB3";
+}
+
+function WesternMouseOver() {
+  document.getElementById("western").style.backgroundColor="#00ABB3";
+}
+//mouse out function for side bar table
+function HomeMouseOut() {
+  document.getElementById("homeId").style.backgroundColor = "";
+}
+
+function RegisterMouseOut() {
+  document.getElementById("registerId").style.backgroundColor = "";
+}
+
+function LoginMouseOut() {
+  document.getElementById("loginId").style.backgroundColor = "";
+}
+
+function LocalBrokerMouseOut() {
+  document.getElementById("localBrokerId").style.backgroundColor = "";
+}
+
+function GlobalBrokerMouseOut() {
+  document.getElementById("globalBrokerId").style.backgroundColor = "";
+}
+
+function HistoryMouseOut() {
+  document.getElementById("historyId").style.backgroundColor = "";
+}
+
+function PersonalMouseOut() {
+  document.getElementById("PersonalId").style.backgroundColor = "";
+}
+
+//               mouseout function for province table
+function CentralMouseOut() {
+  document.getElementById("provinceIdTable").style.backgroundColor=""; // table
+}
+
+function northCentralMouseOut() {
+  document.getElementById("northCentral").style.backgroundColor="";
+}
+
+function northernMouseOut() {
+  document.getElementById("northern").style.backgroundColor="";
+}
+
+function easternMouseOut() {
+  document.getElementById("eastern").style.backgroundColor="";
+}
+
+function northWesternMouseOut() {
+  document.getElementById("northWestern").style.backgroundColor="";
+}
+
+function southernMouseOut() {
+  document.getElementById("southern").style.backgroundColor = "";
+}
+
+function uvaMouseOut() {
+  document.getElementById("uva").style.backgroundColor="";
+}
+
+function sabaMouseOut() {
+  document.getElementById("sabaragamuwa").style.backgroundColor="";
+}
+
+function WesternMouseOut() {
+  document.getElementById("western").style.backgroundColor="";
 }

@@ -1,16 +1,41 @@
+.MaintopicDiv{
+  margin-left: 400px;
+  font-size: 30px;
+  font-style: italic;
+  text-align: center;
+  padding: 8px;
+}
+.sideTab {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 .sideTable{
-  border-spacing: 34px;
+  border-spacing: 20px;
+  padding: 10px;
   background-color: rgb(0, 0, 0);
+  width: 350px;
+  margin-top: -70px;
 }
 .sideButton{
-  width: 100%;
+  width: 90%;
   padding: 20px;
   font-size: 24px;
   border-radius: 15px;
+  margin-left: 15px;
   background-color: rgb(207, 10, 10);
   border-color: rgb(207, 10, 10);
   color: rgb(238, 238, 238);
 }
 .dataTable{
   margin-left: 400px;
+}
+.brokerTable{
+  margin-left: 400px;
+  width: 1000px;
+  padding: 10px;
+  border-spacing: 15px;
+ /* margin-top:-40px;*/
+}
+.brokerLines{
+  font-size:22px;
 }

@@ -2,6 +2,10 @@
   border-spacing: 34px;
   background-color: rgb(0, 0, 0);
 }
+.sideTab {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 .sideButton{
   width: 100%;
   padding: 20px;

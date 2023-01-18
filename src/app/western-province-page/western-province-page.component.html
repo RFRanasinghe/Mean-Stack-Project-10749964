@@ -1,0 +1,31 @@
+<body onload="WesternProContentFunction()">
+  <div id="westernContainer" class="westernClass">
+    <h1 id="westernMainTopic"></h1>
+  </div>
+
+  <div id="companyContainer" class="topicClass">
+    <h2>Wester Province-Clothing Companies</h2>
+  </div>
+
+  <div>
+    <img src="/assets/images/western.png" alt="western-province image" class="westernImage">
+  </div>
+
+  <div> <!--odel table-->
+    <table *ngFor="let odel of oList" class="odelTable">
+      <tr>
+        <td><span>{{odel.odel_category}}</span></td>
+        <td><span>{{odel.o_num_of_colors}}</span></td>
+        <td><span>{{odel.odel_selling_price}}</span></td>
+        <td><span>{{odel.odel_stock_per_month}}</span></td>
+        <td><span>{{odel.odel_outcome_price}}</span></td>
+        <td><span>{{odel.odel_income_price}}</span></td>
+        <td><span>{{odel.odel_profit}}</span></td>
+      </tr>
+    </table>
+  </div>
+
+  <div>
+    <table></table>
+  </div>
+</body>

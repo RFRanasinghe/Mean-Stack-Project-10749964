@@ -1,11 +1,17 @@
 .sideTable{
-  border-spacing: 34px;
+  border-spacing: 20px;
   background-color: rgb(0, 0, 0);
+  width: 350px;
+}
+.sideTab {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .sideButton{
-  width: 100%;
+  width: 90%;
   padding: 20px;
   font-size: 24px;
+  margin-left: 15px;
   border-radius: 15px;
   background-color: rgb(207, 10, 10);
   border-color: rgb(207, 10, 10);
@@ -13,7 +19,7 @@
 }
 .topicContainer{
   margin-left: 360px;
-  margin-top: -600px;
+  margin-top: -300px;
   font-size: 20px;
   padding: 2px;
   width: 100%;

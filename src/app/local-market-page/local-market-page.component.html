@@ -8,46 +8,46 @@
 
   <table class="sideTable">
     <tr>
-      <td><button id="homeId" class="sideButton"></button></td>
+      <td class="sideTab"><button id="homeId" class="sideButton" onmouseover="HomeMouseOver()" onmouseout="HomeMouseOut()"></button></td>
     </tr>
     <tr>
-      <td><button id="registerId" class="sideButton" (click)="CallRegisterProfileClick()"></button></td>
+      <td class="sideTab"><button id="registerId" class="sideButton" (click)="CallRegisterProfileClick()" onmouseover="RegisterMouseOver()" onmouseout="RegisterMouseOut()"></button></td>
     </tr>
     <tr>
-      <td><button id="loginId" class="sideButton" (click)="CallLoginPageFunctionClick()"></button></td>
+      <td class="sideTab"><button id="loginId" class="sideButton" (click)="CallLoginPageFunctionClick()" onmouseover="LoginMouseOver()" onmouseout="LoginMouseOut()"></button></td>
     </tr>
     <tr>
-      <td><button id="localBrokerId" class="sideButton" (click)="CallLocalBrokerPageFunctionClick()"></button></td>
+      <td class="sideTab"><button id="localBrokerId" class="sideButton" (click)="CallLocalBrokerPageFunctionClick()" onmouseover="LocalBrokerMouseOver()" onmouseout="LocalBrokerMouseOut()"></button></td>
     </tr>
     <tr>
-      <td><button id="globalBrokerId" class="sideButton" (click)="CallGlobalBrokerPageFunctionClick()"></button></td>
+      <td class="sideTab"><button id="globalBrokerId" class="sideButton" (click)="CallGlobalBrokerPageFunctionClick()" onmouseover="GlobalBrokerMouseOver()" onmouseout="GlobalBrokerMouseOut()"></button></td>
     </tr>
     <tr>
-      <td><button id="historyId" class="sideButton" (click)="CallHistoryPageFunctionClick()"></button></td>
+      <td class="sideTab"><button id="historyId" class="sideButton" (click)="CallHistoryPageFunctionClick()" onmouseover="HistoryMouseOver()" onmouseout="HistoryMouseOut()"></button></td>
     </tr>
     <tr>
-      <td><button id="PersonalId" class="sideButton" (click)="CallPersonalProfileFunctionClick()"></button></td>
+      <td class="sideTab"><button id="PersonalId" class="sideButton" (click)="CallPersonalProfileFunctionClick()" onmouseover="PersonalMouseOver()" onmouseout="PersonalMouseOut()"></button></td>
     </tr>
   </table>
 
   <div>
     <table class="provinceTable" id="provinceIdTable">
-      <tr>
-        <td><button id="central" class="provinceButton"></button></td>
-        <td><button id="northCentral" class="provinceButton"></button></td>
-        <td><button id="northern" class="provinceButton"></button></td>
+      <tr class="rowMargin">
+        <td><button id="central" class="provinceButton" onmouseover="CentralMouseOver()" onmouseout="CentralMouseOut()"></button></td>
+        <td><button id="northCentral" class="provinceButton" onmouseover="northCentralMouseOver()" onmouseout="northCentralMouseOut()" ></button></td>
+        <td><button id="northern" class="provinceButton" onmouseover="northernMouseOver()" onmouseout="northernMouseOut()"></button></td>
       </tr>
 
-      <tr>
-        <td><button id="eastern" class="provinceButton"></button></td>
-        <td><button id="northWestern" class="provinceButton"></button></td>
-        <td><button id="southern" class="provinceButton"></button></td>
+      <tr class="rowMargin">
+        <td><button id="eastern" class="provinceButton" onmouseover="easternMouseOver()" onmouseout="easternMouseOut()"></button></td>
+        <td><button id="northWestern" class="provinceButton" onmouseover="northWesternMouseOver()" ></button></td>
+        <td><button id="southern" class="provinceButton" onmouseover="southernMouseOver()" onmouseout="southernMouseOut()"></button></td>
       </tr>
 
-      <tr>
+      <tr class="rowMargin">
         <td><button id="uva" class="provinceButton"></button></td>
         <td><button id="sabaragamuwa" class="provinceButton"></button></td>
-        <td><button id="western" class="provinceButton"></button></td>
+        <td><button id="western" class="provinceButton" (click)="CallDirectWesternProvinceFunctionClick()"></button></td>
       </tr>
     </table>
   </div>

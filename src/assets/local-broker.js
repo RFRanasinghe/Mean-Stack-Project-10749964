@@ -9,10 +9,20 @@ function RegisterLoadContentFunction()
     document.getElementById("globalBrokerId").innerHTML="Global Broker Details";
 
     //background colors
-    document.getElementById("localBrokerId").style.backgroundColor="#5463FF";
+    document.getElementById("localBrokerId").style.backgroundColor = "#5463FF";
+    document.getElementById("brokerTopic").style.backgroundColor = "#184D47";
+    document.getElementById("MaintopicContainer").style.backgroundColor = "#693E52";
 
     document.getElementById("historyId").innerHTML="History";
-    document.getElementById("PersonalId").innerHTML="Personal Profile";
+    document.getElementById("PersonalId").innerHTML = "Personal Profile";
+
+    //change font color
+  document.getElementById("mainTopic").style.color="white";
+  document.getElementById("province").style.color = "white";
+  document.getElementById("brokerId").style.color = "white";
+  document.getElementById("brokerName").style.color = "white";
+  document.getElementById("brokerNumber").style.color = "white";
+  document.getElementById("brokerMail").style.color = "white";
   }
          window.onload = RegisterLoadContentFunction;
 
@@ -52,4 +62,7 @@ function PersonalProfileFunctionClick() {
   window.location.href="/personal-profile-page";
 }
 
-
+//button click directs to western-province-page
+function DirectWesternProvinceFunctionClick() {
+  window.location.href="/western-province-page";
+}

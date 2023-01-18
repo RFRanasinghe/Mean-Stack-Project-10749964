@@ -15,6 +15,7 @@ import { HistoryPageComponent } from './history-page/history-page.component';
 import { PersonalProfilePageComponent } from './personal-profile-page/personal-profile-page.component';
 import { LocalMarketPageComponent } from './local-market-page/local-market-page.component';
 import { GlobalMarketPageComponent } from './global-market-page/global-market-page.component';
+import { WesternProvincePageComponent } from './western-province-page/western-province-page.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { GlobalMarketPageComponent } from './global-market-page/global-market-pa
     PersonalProfilePageComponent,
     LocalMarketPageComponent,
     GlobalMarketPageComponent,
+    WesternProvincePageComponent,
   ],
   imports: [
     FormsModule,
@@ -43,7 +45,8 @@ import { GlobalMarketPageComponent } from './global-market-page/global-market-pa
       { path: 'history-page', component: HistoryPageComponent},
       { path: 'personal-profile-page', component: PersonalProfilePageComponent},
       { path: 'local-market-page', component: LocalMarketPageComponent},
-      { path: 'global-market-page', component: GlobalMarketPageComponent},
+      { path: 'global-market-page', component: GlobalMarketPageComponent },
+      { path: 'western-province-page', component: WesternProvincePageComponent},
     ]),
   ],
   providers: [],

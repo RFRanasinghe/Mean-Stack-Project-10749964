@@ -1,8 +1,13 @@
-function WesternProFunction()
+//                                  Western Province          JAVASCRIPT code
+function WesternProContentFunction()
 {
-  document.getElementById("aId").innerHTML="XYZ button";
-  document.getElementById("bId").innerHTML="abc button";
-  document.getElementById("cId").innerHTML="efg button";
-  document.getElementById("dId").innerHTML="hij button";
+  document.getElementById("westernMainTopic").innerHTML = "Western Province";
+
+  //background color
+  document.getElementById("westernContainer").style.backgroundColor = "#083C5A";
+  document.getElementById("companyContainer").style.backgroundColor = "#25A55F";
+
+  //change font color
+  document.getElementById("westernMainTopic").style.color = "#E4F4FD";
 }
-window.onload = WesternProFunction;
+window.onload = WesternProContentFunction;

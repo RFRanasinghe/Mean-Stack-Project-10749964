@@ -1,32 +1,45 @@
 <body onload="RegisterLoadContentFunction()">
-  <table class="sideTable" >
+  <div id="MaintopicContainer" class="MaintopicDiv">
+    <h1 id="mainTopic">Local Broker Details</h1>
+  </div>
+  <table class="sideTable">
     <tr>
-      <td><button id="homeId" class="sideButton" (click)="CallHomeClickPageFunction()"></button></td>
+      <td class="sideTab"><button id="homeId" class="sideButton" (click)="CallHomeClickPageFunction()"></button></td>
     </tr>
     <tr>
-      <td><button id="registerId" class="sideButton" (click)="CallRegisterProfileClick()"></button></td>
+      <td class="sideTab"><button id="registerId" class="sideButton" (click)="CallRegisterProfileClick()"></button></td>
     </tr>
     <tr>
-      <td><button id="loginId" class="sideButton" (click)="CallLoginPageFunctionClick()"></button></td>
+      <td class="sideTab"><button id="loginId" class="sideButton" (click)="CallLoginPageFunctionClick()"></button></td>
     </tr>
     <tr>
-      <td><button id="localBrokerId" class="sideButton" (click)="CallLocalBrokerAlertFunction()"></button></td>
+      <td class="sideTab"><button id="localBrokerId" class="sideButton" (click)="CallLocalBrokerAlertFunction()"></button></td>
     </tr>
     <tr>
-      <td><button id="globalBrokerId" class="sideButton" (click)="CallGlobalBrokerPageFunctionClick()"></button></td>
+      <td class="sideTab"><button id="globalBrokerId" class="sideButton" (click)="CallGlobalBrokerPageFunctionClick()"></button></td>
     </tr>
     <tr>
-      <td><button id="historyId" class="sideButton" (click)="CallHistoryPageFunctionClick()"></button></td>
+      <td class="sideTab"><button id="historyId" class="sideButton" (click)="CallHistoryPageFunctionClick()"></button></td>
     </tr>
     <tr>
-      <td><button id="PersonalId" class="sideButton" (click)="CallPersonalProfileFunctionClick()"></button></td>
+      <td class="sideTab"><button id="PersonalId" class="sideButton" (click)="CallPersonalProfileFunctionClick()"></button></td>
     </tr>
   </table>
 
-  <table  *ngFor="let abc of blList">
+  <table  *ngFor="let abc of blList" class="brokerTable">
+    <tr id="brokerTopic">
+      <td id="province" class="brokerLines"><span>Province Name</span></td>
+      <td id="brokerId" class="brokerLines"><span>Local Broker ID</span></td>
+      <td id="brokerName" class="brokerLines"><span>Local Broker Name</span></td>
+      <td id="brokerNumber" class="brokerLines"><span>Broker Contact Number</span></td>
+      <td id="brokerMail" class="brokerLines"><span>Broker Email Address</span></td>
+    </tr>
     <tr>
-      <td><span>{{abc.province}}</span></td>
-      <td><span>{{abc.broker_name}}</span></td>
+      <td class="brokerLines"><span>{{abc.province}}</span></td>
+      <td class="brokerLines"><span>{{abc.broker_id}}</span></td>
+      <td class="brokerLines"><span>{{abc.broker_name}}</span></td>
+      <td class="brokerLines"><span>{{abc.contact_number}}</span></td>
+      <td class="brokerLines"><span>{{abc.b_email}}</span></td>
     </tr>
 
   </table>

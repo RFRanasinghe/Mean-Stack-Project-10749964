@@ -27,7 +27,23 @@ app.get('/api/localBroker', (req, res) => {
   })
 })
 
-//data retrieving on local business-Western Province Odel Table
+//data retrieving on local business-North Province Sogo Table-Mega market
+app.get('/api/localMarket/NorthProvince/Sogo', (req, res) => {
+  database.collection('SogoTable').find({}).toArray((err, result) => {
+    if (err) throw err
+    res.send(result)
+  })
+})
+
+//data retrieving on local business-North Province Happy Jewellery Table-Mega market
+app.get('/api/localMarket/NorthProvince/HappyJewellery', (req, res) => {
+  database.collection('HappyJewelleryTable').find({}).toArray((err, result) => {
+    if (err) throw err
+    res.send(result)
+  })
+})
+
+//data retrieving on local business-Western Province Odel Table-Fashion
 app.get('/api/localMarket/WesternProvince/Odel', (req, res) => {
   database.collection('OdelTable').find({}).toArray((err, result) => {
     if (err) throw err
@@ -35,7 +51,7 @@ app.get('/api/localMarket/WesternProvince/Odel', (req, res) => {
   })
 })
 
-//data retrieving on local business-Western Province Aliya Table
+//data retrieving on local business-Western Province Aliya Table-Fashion
 app.get('/api/localMarket/WesternProvince/Aliya', (req, res) => {
   database.collection('AliyaTable').find({}).toArray((err, result) => {
     if (err) throw err
@@ -43,7 +59,7 @@ app.get('/api/localMarket/WesternProvince/Aliya', (req, res) => {
   })
 })
 
-//data retrieving on local business-Western Province Mimosa Table
+//data retrieving on local business-Western Province Mimosa Table-Fashion
 app.get('/api/localMarket/WesternProvince/Mimosa', (req, res) => {
   database.collection('MimosaTable').find({}).toArray((err, result) => {
     if (err) throw err
