@@ -12,12 +12,14 @@ declare var WesternProContentFunction: () => any;
 export class WesternProvincePageComponent {
 
   oList: any;
+  aList: any;
 
   constructor(private apiService: ApiService) {
     this.getOdelList()
+    this.getAliyaList()
   }
 
-  getOdelList() {
+  getOdelList() {              //odel list
     this.apiService.getWesternOdel().subscribe({
       complete: () => {
 
@@ -31,6 +33,19 @@ export class WesternProvincePageComponent {
     })
   }
 
+  getAliyaList() {        //aliya list
+    this.apiService.getWesternAliya().subscribe({
+      complete: () => {
+
+      },
+      error: (error) => {
+        console.log(error)
+      },
+      next:(value)=> {
+        this.aList = value
+      },
+    })
+  }
   //load page content function
   CallWesternProContentFunction() {
     WesternProContentFunction();

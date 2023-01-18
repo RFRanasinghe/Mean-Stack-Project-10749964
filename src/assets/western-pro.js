@@ -2,6 +2,7 @@
 function WesternProContentFunction()
 {
   document.getElementById("westernMainTopic").innerHTML = "Western Province";
+  document.getElementById("aliyaButtonShow").innerHTML = "Aliya Clothing Company";
 
   //background color
   document.getElementById("westernContainer").style.backgroundColor = "#083C5A";

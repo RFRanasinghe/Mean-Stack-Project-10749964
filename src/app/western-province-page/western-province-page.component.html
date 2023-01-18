@@ -35,6 +35,29 @@
   </div>
 
   <div>
-    <table></table>
+    <button id="aliyaButtonShow" class="aliyaShowClass"></button>
+  </div>
+  <div> <!--aliya table-->
+    <table mat-table class="aliyaTable">
+      <tr id="aliyaHeading">
+        <th>Category</th>
+        <th>Number of Types</th>
+        <th>Selling Price</th>
+        <th>Stock per month</th>
+        <th>Company outcome</th>
+        <th>Company income</th>
+        <th>Company profit</th>
+      </tr>
+
+      <tr *ngFor="let aliya of aList">
+        <td>{{aliya.aliya_category}}</td>
+        <td style="text-align:center">{{aliya.a_num_of_colors}}</td>
+        <td><span>{{aliya.aliya_selling_price}}</span></td>
+        <td><span>{{aliya.aliya_stock_per_month}}</span></td>
+        <td><span>{{aliya.aliya_outcome_price}}</span></td>
+        <td><span>{{aliya.aliya_income_price}}</span></td>
+        <td><span>{{aliya.aliya_profit}}</span></td>
+      </tr>
+    </table>
   </div>
 </body>

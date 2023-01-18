@@ -15,7 +15,6 @@ h2{
 .odelTable{
   margin-left: 500px;
   width: 800px;
-  margin-top:-40px;
   border-spacing: 20px;
   border-color: black;
   margin-top: -600px;
@@ -31,5 +30,21 @@ td {
 .westernImage{
   margin-top:-60px;
 }
-
-
+.aliyaShowClass{
+  margin-top: 40px;
+  width: 100%;
+  padding: 10px;
+  font-size: 24px;
+}
+.aliyaTable {
+  margin-top: 40px;
+  margin-left: 6%;
+}
+.aliyaTable th,
+td {
+  padding-top: 5px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 40px;
+  text-align: center;
+}
