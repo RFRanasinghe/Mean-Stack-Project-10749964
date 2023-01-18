@@ -12,10 +12,19 @@
   </div>
 
   <div> <!--odel table-->
-    <table *ngFor="let odel of oList" class="odelTable">
-      <tr>
-        <td><span>{{odel.odel_category}}</span></td>
-        <td><span>{{odel.o_num_of_colors}}</span></td>
+    <table  mat-table class="odelTable" id="odelData">
+      <tr id="odelHeading">
+        <th>Category</th>
+        <th>Number of Types</th>
+        <th>Selling Price</th>
+        <th>Stock per month</th>
+        <th>Company outcome</th>
+        <th>Company income</th>
+        <th>Company profit</th>
+      </tr>
+      <tr *ngFor="let odel of oList">
+        <td>{{odel.odel_category}}</td>
+        <td style="text-align:center">{{odel.o_num_of_colors}}</td>
         <td><span>{{odel.odel_selling_price}}</span></td>
         <td><span>{{odel.odel_stock_per_month}}</span></td>
         <td><span>{{odel.odel_outcome_price}}</span></td>
