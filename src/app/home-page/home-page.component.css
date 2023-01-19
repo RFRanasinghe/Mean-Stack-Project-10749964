@@ -21,8 +21,8 @@
   margin-left: 360px;
   margin-top: -300px;
   font-size: 20px;
-  padding: 2px;
-  width: 100%;
+  padding: 8px;
+  width: 76.2%;
   font-style: italic;
   text-align: center;
   color: rgb(153, 0, 0);
@@ -30,7 +30,9 @@
 .buttonContainer{
   margin-left: 360px;
   border-spacing: 30px;
-  width: 100%;
+  width: 76.2%;
+  padding: 10px;
+  height: 120px;
 }
 .mainButton{
   height: 80px;
@@ -38,7 +40,6 @@
   font-size:24px;
   border-radius: 15px;
   margin-left: 80px;
-  border-color: rgb(31, 70, 144);
   color: white;
 }
 #globalMarketButton{
