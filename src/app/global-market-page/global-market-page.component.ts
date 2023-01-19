@@ -13,9 +13,11 @@ declare var globalMarketPageContent: () => any;
 export class GlobalMarketPageComponent {
 
   spaList: any;
+  louisList: any;
 
   constructor(private apiService: ApiService) {
     this.getSpaList()
+    this.getLouisList()
   }
 
   getSpaList() {
@@ -28,6 +30,20 @@ export class GlobalMarketPageComponent {
       },
       next:(value)=> {
         this.spaList = value
+      },
+    })
+  }
+
+  getLouisList() {
+    this.apiService.getGlobalLouis().subscribe({
+      complete: () => {
+
+      },
+      error: (error) => {
+        console.log(error)
+      },
+      next:(value)=> {
+        this.louisList = value
       },
     })
   }
