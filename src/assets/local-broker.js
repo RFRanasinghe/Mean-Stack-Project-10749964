@@ -1,20 +1,21 @@
 //          local-broker-page
 //load content of the through JAVASCRIPT
 function RegisterLoadContentFunction()
-  {
+{
+    document.getElementById("mainTopic").innerHTML = "Local Broker Details";
     document.getElementById("homeId").innerHTML="Home";
     document.getElementById("registerId").innerHTML="Register Profile";
     document.getElementById("loginId").innerHTML="Log In";
     document.getElementById("localBrokerId").innerHTML="Local Broker Details";
-    document.getElementById("globalBrokerId").innerHTML="Global Broker Details";
+    document.getElementById("globalBrokerId").innerHTML = "Global Broker Details";
+    document.getElementById("historyId").innerHTML = "History Details";
+    document.getElementById("PersonalId").innerHTML = "Personal Profile";
 
     //background colors
     document.getElementById("localBrokerId").style.backgroundColor = "#5463FF";
-    document.getElementById("brokerTopic").style.backgroundColor = "#184D47";
-    document.getElementById("MaintopicContainer").style.backgroundColor = "#693E52";
-
-    document.getElementById("historyId").innerHTML="History";
-    document.getElementById("PersonalId").innerHTML = "Personal Profile";
+    document.getElementById("mainTopic").style.backgroundColor = "#FF5D5D";
+    document.getElementById("brokerlHeading").style.backgroundColor = "#DBD0C0";
+    document.getElementById("brokerData").style.backgroundColor = "#FAEEE0";
 
     //change font color
   document.getElementById("mainTopic").style.color="white";
@@ -23,6 +24,7 @@ function RegisterLoadContentFunction()
   document.getElementById("brokerName").style.color = "white";
   document.getElementById("brokerNumber").style.color = "white";
   document.getElementById("brokerMail").style.color = "white";
+  document.getElementById("mainTopic").style.color = "white";
   }
          window.onload = RegisterLoadContentFunction;
 

@@ -1,6 +1,6 @@
 <body onload="RegisterLoadContentFunction()">
   <div id="MaintopicContainer" class="MaintopicDiv">
-    <h1 id="mainTopic">Local Broker Details</h1>
+    <h1 id="mainTopic"></h1>
   </div>
   <table class="sideTable">
     <tr>
@@ -26,21 +26,22 @@
     </tr>
   </table>
 
-  <table  *ngFor="let abc of blList" class="brokerTable">
-    <tr id="brokerTopic">
-      <td id="province" class="brokerLines"><span>Province Name</span></td>
-      <td id="brokerId" class="brokerLines"><span>Local Broker ID</span></td>
-      <td id="brokerName" class="brokerLines"><span>Local Broker Name</span></td>
-      <td id="brokerNumber" class="brokerLines"><span>Broker Contact Number</span></td>
-      <td id="brokerMail" class="brokerLines"><span>Broker Email Address</span></td>
-    </tr>
-    <tr>
-      <td class="brokerLines"><span>{{abc.province}}</span></td>
-      <td class="brokerLines"><span>{{abc.broker_id}}</span></td>
-      <td class="brokerLines"><span>{{abc.broker_name}}</span></td>
-      <td class="brokerLines"><span>{{abc.contact_number}}</span></td>
-      <td class="brokerLines"><span>{{abc.b_email}}</span></td>
-    </tr>
-
-  </table>
+  <div>
+    <table mat-table class="brokerTable" id="brokerData">
+      <tr id="brokerlHeading">
+        <th>Province</th>
+        <th>Broker Id</th>
+        <th>Broker Name</th>
+        <th>Contact Number</th>
+        <th>Broker Email</th>
+      </tr>
+      <tr *ngFor="let broker of blList">
+        <td>{{broker.province}}</td>
+        <td style="text-align:center">{{broker.broker_id}}</td>
+        <td><span>{{broker.broker_name}}</span></td>
+        <td><span>{{broker.contact_number}}</span></td>
+        <td><span>{{broker.b_email}}</span></td>
+      </tr>
+    </table>
+  </div>
 </body>

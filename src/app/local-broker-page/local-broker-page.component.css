@@ -26,16 +26,18 @@
   border-color: rgb(207, 10, 10);
   color: rgb(238, 238, 238);
 }
-.dataTable{
-  margin-left: 400px;
-}
-.brokerTable{
-  margin-left: 400px;
-  width: 1000px;
-  padding: 10px;
-  border-spacing: 15px;
- /* margin-top:-40px;*/
-}
 .brokerLines{
   font-size:22px;
+}
+.brokerTable{
+  margin-left: 420px;
+  margin-top: -820px;
+}
+.brokerTable th,
+td {
+  padding-top: 5px;
+  /* padding-bottom: 20px; */
+  padding-left: 20px;
+  padding-right: 40px;
+  text-align: center;
 }

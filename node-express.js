@@ -2,6 +2,10 @@ const express = require('express');
 const cors = require('cors')
 const MongoClient = require('mongodb').MongoClient
 
+const http = require('http');
+const { Server } = require("socket.io");
+const io = new Server(server);
+
 const app = express()
 app.use(cors())
 app.use(express.json())
@@ -14,7 +18,7 @@ app.use(function (req, res, next) {
   next();
 });
 
- 
+
 //retrieving localBroker Details
 app.get('/api/localBroker', (req, res) => {
   database.collection('localBrokerTable').find({}).toArray((err, result) => {
