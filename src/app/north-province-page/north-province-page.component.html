@@ -10,8 +10,58 @@
   <div id="sogoContainer">
     <button id="SogoId"></button>
   </div>
+
+  <div>
+    <table mat-table class="sogoTable" id="sogoData">
+      <tr id="sogoHeading">
+        <th>Category</th>
+        <th>Number of Types</th>
+        <th>Selling Price</th>
+        <th>Stock per month</th>
+        <th>Company outcome</th>
+        <th>Company income</th>
+        <th>Company profit</th>
+      </tr>
+      <tr *ngFor="let sogo of sList">
+        <td>{{sogo.sogo_category}}</td>
+        <td style="text-align:center">{{sogo.s_num_of_types}}</td>
+        <td><span>{{sogo.sogo_selling_price}}</span></td>
+        <td><span>{{sogo.sogo_stock_per_month}}</span></td>
+        <td><span>{{sogo.sogo_outcome_price}}</span></td>
+        <td><span>{{sogo.sogo_income_price}}</span></td>
+        <td><span>{{sogo.sogo_profit}}</span></td>
+      </tr>
+    </table>
+  </div>
+
+  <div id="jewelContainer">
+    <button id="jewelId"></button>
+  </div>
+
+  <div>
+    <table mat-table class="jewelTable" id="jewelData">
+      <tr id="jewelHeading">
+        <th>Category</th>
+        <th>Number of Types</th>
+        <th>Selling Price</th>
+        <th>Stock per month</th>
+        <th>Company outcome</th>
+        <th>Company income</th>
+        <th>Company profit</th>
+      </tr>
+      <tr *ngFor="let jewel of jList">
+        <td>{{jewel.jewellery_category}}</td>
+        <td style="text-align:center">{{jewel.num_of_jewellery_types}}</td>
+        <td><span>{{jewel.jewellery_selling_price}}</span></td>
+        <td><span>{{jewel.jewellery_stock_per_month}}</span></td>
+        <td><span>{{jewel.jewellery_outcome_price}}</span></td>
+        <td><span>{{jewel.jewellery_income_price}}</span></td>
+        <td><span>{{jewel.jewellery_profit}}</span></td>
+      </tr>
+    </table>
+  </div>
+
   <div>
     <img src="/assets/images/north.jpg" alt="north-market image" class="northImage">
   </div>
-
 </body>

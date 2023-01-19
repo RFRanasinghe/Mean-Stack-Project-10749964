@@ -14,6 +14,7 @@ private url = 'http://localhost:8080/api';
     return this.httpClient.get(this.url+'/localBroker').pipe(map(data=>data))
   }
 
+  //western province api
   getWesternOdel() {
     return this.httpClient.get(this.url+'/localMarket/WesternProvince/Odel').pipe(map(data=>data))
   }
@@ -25,6 +26,16 @@ private url = 'http://localhost:8080/api';
   getWesternMimosa() {
     return this.httpClient.get(this.url + '/localMarket/WesternProvince/Mimosa').pipe(map(data => data))
   }
+
+  //north province api
+  getNorthSogo() {
+    return this.httpClient.get(this.url + '/localMarket/NorthProvince/Sogo').pipe(map(data => data))
+  }
+
+  getNorthJewel() {
+    return this.httpClient.get(this.url + '/localMarket/NorthProvince/HappyJewellery').pipe(map(data => data))
+  }
+
   register(data: any) {
     return this.httpClient.post(this.url+'/register',data).pipe(map(data=>data))
   }
