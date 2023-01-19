@@ -1,1 +1,38 @@
-<p>global-market-page works!</p>
+<body onload="globalMarketPageContent()">
+  <div id="topicContainer">
+    <h1 id="globalTopic"></h1>
+  </div>
+
+  <div id="spaContainer">
+    <button id="spaCeylonButton"></button>
+  </div>
+
+  <div> <!--spa table-->
+    <table mat-table class="spaTable" id="spaTableId">
+      <tr id="spaHeading">
+        <th>Category</th>
+        <th>Number of Types</th>
+        <th>Selling Price</th>
+        <th>Stock per month</th>
+        <th>Company outcome</th>
+        <th>Company income</th>
+        <th>Company profit</th>
+      </tr>
+
+      <tr *ngFor="let spa of spaList">
+        <td>{{spa.ceylon_category}}</td>
+        <td style="text-align:center">{{spa.c_num_of_types}}</td>
+        <td><span>{{spa.ceylon_selling_price}}</span></td>
+        <td><span>{{spa.c_stock_per_month}}</span></td>
+        <td><span>{{spa.ceylon_outcome_price}}</span></td>
+        <td><span>{{spa.ceylon_income_price}}</span></td>
+        <td><span>{{spa.ceylon_profit}}</span></td>
+      </tr>
+    </table>
+  </div>
+
+
+  <div>
+    <img src="/assets/images/global.jpg" alt="global-market image" class="globalImage">
+  </div>
+</body>

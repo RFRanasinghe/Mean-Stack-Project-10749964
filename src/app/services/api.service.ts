@@ -36,6 +36,11 @@ private url = 'http://localhost:8080/api';
     return this.httpClient.get(this.url + '/localMarket/NorthProvince/HappyJewellery').pipe(map(data => data))
   }
 
+  //global api
+  getGlobalSpa() {
+    return this.httpClient.get(this.url + '/globalMarket/spaCeylon').pipe(map(data => data))
+  }
+
   register(data: any) {
     return this.httpClient.post(this.url+'/register',data).pipe(map(data=>data))
   }

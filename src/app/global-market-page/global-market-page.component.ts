@@ -1,4 +1,9 @@
 import { Component } from '@angular/core';
+import { ServerCapabilities } from 'mongodb';
+import { map } from 'rxjs/operators';
+import { ApiService } from '../services/api.service';
+
+declare var globalMarketPageContent: () => any;
 
 @Component({
   selector: 'app-global-market-page',
@@ -7,4 +12,27 @@ import { Component } from '@angular/core';
 })
 export class GlobalMarketPageComponent {
 
+  spaList: any;
+
+  constructor(private apiService: ApiService) {
+    this.getSpaList()
+  }
+
+  getSpaList() {
+    this.apiService.getGlobalSpa().subscribe({
+      complete: () => {
+
+      },
+      error: (error) => {
+        console.log(error)
+      },
+      next:(value)=> {
+        this.spaList = value
+      },
+    })
+  }
+
+  CallglobalMarketPageContent() {
+    globalMarketPageContent();
+  }
 }
