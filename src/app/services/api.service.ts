@@ -45,6 +45,10 @@ private url = 'http://localhost:8080/api';
     return this.httpClient.get(this.url + '/globalMarket/Louis').pipe(map(data => data))
   }
 
+  getGlobalHermer() {
+    return this.httpClient.get(this.url + '/globalMarket/Herm').pipe(map(data => data))
+  }
+
   register(data: any) {
     return this.httpClient.post(this.url+'/register',data).pipe(map(data=>data))
   }

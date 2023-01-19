@@ -59,6 +59,33 @@
     </table>
   </div>
 
+  <div id="hermerContainer">
+    <button id="hermerButton"></button>
+  </div>
+
+  <div> <!--hermer table-->
+    <table mat-table class="hermerTable" id="hermerTableId">
+      <tr id="hermerHeading">
+        <th>Category</th>
+        <th>Number of Types</th>
+        <th>Selling Price</th>
+        <th>Stock per month</th>
+        <th>Company outcome</th>
+        <th>Company income</th>
+        <th>Company profit</th>
+      </tr>
+
+      <tr *ngFor="let louis of louisList">
+        <td>{{louis.louis_category}}</td>
+        <td style="text-align:center">{{louis.l_num_of_types}}</td>
+        <td><span>{{louis.louis_selling_price}}</span></td>
+        <td><span>{{louis.l_stock_per_month}}</span></td>
+        <td><span>{{louis.louis_outcome_price}}</span></td>
+        <td><span>{{louis.louis_income_price}}</span></td>
+        <td><span>{{louis.louis_profit}}</span></td>
+      </tr>
+    </table>
+  </div>
 
   <div>
     <img src="/assets/images/global.jpg" alt="global-market image" class="globalImage">

@@ -3,7 +3,8 @@
 }
 .globalImage{
   width:39.2%;
-  margin-top: -1180px;
+  height: 952px;
+  margin-top: -1696px;
 }
 #spaCeylonButton{
   margin-left: 600px;
@@ -34,6 +35,23 @@ td {
   margin-left: 600px;
 }
 .louisTable th,
+td {
+  padding-top: 5px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+}
+#hermerButton{
+  width: 100%;
+  font-size:24px;
+  padding: 8px;
+}
+.hermerTable {
+ /* margin-left: 100px;*/
+  width: 100%;
+}
+.hermerTable th,
 td {
   padding-top: 5px;
   padding-bottom: 20px;

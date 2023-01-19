@@ -14,10 +14,12 @@ export class GlobalMarketPageComponent {
 
   spaList: any;
   louisList: any;
+  hermerList: any;
 
   constructor(private apiService: ApiService) {
     this.getSpaList()
     this.getLouisList()
+    this.getHermerList()
   }
 
   getSpaList() {
@@ -44,6 +46,20 @@ export class GlobalMarketPageComponent {
       },
       next:(value)=> {
         this.louisList = value
+      },
+    })
+  }
+
+  getHermerList() {
+    this.apiService.getGlobalHermer().subscribe({
+      complete: () => {
+
+      },
+      error: (error) => {
+        console.log(error)
+      },
+      next:(value)=> {
+        this.hermerList = value
       },
     })
   }
