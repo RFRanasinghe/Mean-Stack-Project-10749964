@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 
+declare var LoadBroker7Content: () => any;
 @Component({
   selector: 'app-broker-seven-chat',
   templateUrl: './broker-seven-chat.component.html',
@@ -7,4 +8,7 @@ import { Component } from '@angular/core';
 })
 export class BrokerSevenChatComponent {
 
+  CallLoadBroker7Content() {
+    LoadBroker7Content();
+  }
 }

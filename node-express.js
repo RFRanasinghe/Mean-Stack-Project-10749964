@@ -6,10 +6,8 @@ const app = express()
 app.use(cors())
 app.use(express.json())
 
-const http = require('http');
-const server = http.createServer(app);
-const { Server } = require("socket.io");
-const io = new Server(server);
+const http = require('http').createServer(app);
+var io = require('socket.io')(http);
 
 var database
 
@@ -99,6 +97,18 @@ app.get('/api/registerProfiles', (req, res) => {
     res.send(result)
   })
 })
+
+/*import { WebSocketServer } from 'ws';
+
+const wss = new WebSocketServer({ port: 8080 });
+
+wss.on('connection', function connection(ws) {
+  ws.on('message', function message(data) {
+    console.log('received: %s', data);
+  });
+
+  ws.send('something');
+});*/
 
 MongoClient.connect('mongodb://localhost:27017', { useNewUrlParser: true }, (error, result) => {
     if (error) throw error

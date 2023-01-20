@@ -1,0 +1,16 @@
+#topicContainer{
+  padding:8px;
+}
+#input{
+  padding: 8px;
+  margin-top: 590px;
+}
+#sendId{
+  border-radius: 10px;
+  margin-left: 40px;
+  width: 80px;
+  padding:4px;
+}
+#textId{
+  width:90%;
+}
