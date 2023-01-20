@@ -41,3 +41,24 @@ td {
   padding-right: 40px;
   text-align: center;
 }
+#TopicContainer{
+  width: 70%;
+  margin-left:420px;
+  margin-top: 16px;
+}
+#brokerphoto{
+  padding:10px;
+  padding-left: 360px;
+}
+.brokerPic {
+  margin-left: 350px;
+}
+
+.brokerClass{
+  margin-left: 100px;
+  height: 200px;
+  width: 200px;
+}
+.bAlign{
+  margin-left:100px;
+}

@@ -17,6 +17,15 @@ import { LocalMarketPageComponent } from './local-market-page/local-market-page.
 import { GlobalMarketPageComponent } from './global-market-page/global-market-page.component';
 import { WesternProvincePageComponent } from './western-province-page/western-province-page.component';
 import { NorthProvincePageComponent } from './north-province-page/north-province-page.component';
+import { BrokerOneChatComponent } from './broker-one-chat/broker-one-chat.component';
+import { BrokerTwoChatComponent } from './broker-two-chat/broker-two-chat.component';
+import { BrokerThreeChatComponent } from './broker-three-chat/broker-three-chat.component';
+import { BrokerFourChatComponent } from './broker-four-chat/broker-four-chat.component';
+import { BrokerFiveChatComponent } from './broker-five-chat/broker-five-chat.component';
+import { BrokerSixChatComponent } from './broker-six-chat/broker-six-chat.component';
+import { BrokerSevenChatComponent } from './broker-seven-chat/broker-seven-chat.component';
+import { BrokerEightChatComponent } from './broker-eight-chat/broker-eight-chat.component';
+import { BrokerNineChatComponent } from './broker-nine-chat/broker-nine-chat.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +41,15 @@ import { NorthProvincePageComponent } from './north-province-page/north-province
     GlobalMarketPageComponent,
     WesternProvincePageComponent,
     NorthProvincePageComponent,
+    BrokerOneChatComponent,
+    BrokerTwoChatComponent,
+    BrokerThreeChatComponent,
+    BrokerFourChatComponent,
+    BrokerFiveChatComponent,
+    BrokerSixChatComponent,
+    BrokerSevenChatComponent,
+    BrokerEightChatComponent,
+    BrokerNineChatComponent,
   ],
   imports: [
     FormsModule,
@@ -49,7 +67,16 @@ import { NorthProvincePageComponent } from './north-province-page/north-province
       { path: 'local-market-page', component: LocalMarketPageComponent},
       { path: 'global-market-page', component: GlobalMarketPageComponent },
       { path: 'western-province-page', component: WesternProvincePageComponent },
-      { path: 'north-province-page', component: NorthProvincePageComponent},
+      { path: 'north-province-page', component: NorthProvincePageComponent },
+      { path: 'broker-one-chat', component: BrokerOneChatComponent },
+      { path: 'broker-two-chat', component: BrokerTwoChatComponent },
+      { path: 'broker-three-chat', component: BrokerThreeChatComponent },
+      { path: 'broker-four-chat', component: BrokerFourChatComponent },
+      { path: 'broker-five-chat', component: BrokerFiveChatComponent },
+      { path: 'broker-six-chat', component: BrokerSixChatComponent },
+      { path: 'broker-seven-chat', component: BrokerSevenChatComponent },
+      { path: 'broker-eight-chat', component: BrokerEightChatComponent },
+      { path: 'broker-nine-chat', component: BrokerNineChatComponent},
     ]),
   ],
   providers: [],

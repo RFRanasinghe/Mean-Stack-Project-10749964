@@ -2,13 +2,14 @@ const express = require('express');
 const cors = require('cors')
 const MongoClient = require('mongodb').MongoClient
 
-const http = require('http');
-const { Server } = require("socket.io");
-const io = new Server(server);
-
 const app = express()
 app.use(cors())
 app.use(express.json())
+
+const http = require('http');
+const server = http.createServer(app);
+const { Server } = require("socket.io");
+const io = new Server(server);
 
 var database
 
@@ -98,7 +99,6 @@ app.get('/api/registerProfiles', (req, res) => {
     res.send(result)
   })
 })
-
 
 MongoClient.connect('mongodb://localhost:27017', { useNewUrlParser: true }, (error, result) => {
     if (error) throw error
