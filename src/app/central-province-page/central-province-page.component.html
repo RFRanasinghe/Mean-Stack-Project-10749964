@@ -4,10 +4,10 @@
   </div>
 
   <div id="companyContainer">
-    <h2 id="subTopic"></h2>
+    <button id="subTopic"></button>
   </div>
 
-  <div> <!--odel table-->
+  <div> <!--mukuwa table-->
     <table mat-table class="mukuwaTable" id="mukuwaData">
       <tr id="mukuwaHeading">
         <th>Category</th>
@@ -22,6 +22,31 @@
         <td><span>{{mukuwa.project_num}}</span></td>
         <td><span>{{mukuwa.income}}</span></td>
         <td><span>{{mukuwa.targeted_income}}</span></td>
+      </tr>
+    </table>
+  </div>
+
+  <div id="engContainer">
+    <button id="engId"></button>
+  </div>
+
+  <div> <!--eng table-->
+    <table mat-table class="engTable" id="engData">
+      <tr id="engHeading">
+        <th>Category</th>
+        <th>Number of types</th>
+        <th>Product selling price</th>
+        <th>Product outcome</th>
+        <th>Product income</th>
+        <th>Product profit</th>
+      </tr>
+      <tr *ngFor="let eng of engList">
+        <td>{{eng.category}}</td>
+        <td style="text-align:center">{{eng.types}}</td>
+        <td><span>{{eng.selling_price}}</span></td>
+        <td><span>{{eng.outcome_price}}</span></td>
+        <td><span>{{eng.income_price}}</span></td>
+        <td><span>{{eng.profit}}</span></td>
       </tr>
     </table>
   </div>

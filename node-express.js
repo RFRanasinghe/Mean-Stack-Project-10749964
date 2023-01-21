@@ -6,7 +6,8 @@ const app = express()
 app.use(cors())
 app.use(express.json())
 
-const http = require('http').createServer(app);
+const server = require('http').createServer(app);
+const io = require('socket.io')(server, {cors: { origin: "*"}})
 
 var database
 
@@ -33,6 +34,13 @@ app.get('/api/localMarket/CentralProvince/mukuwa', (req, res) => {
   })
 })
 
+//data retrieving on local business-Central Province NTC Table
+app.get('/api/localMarket/CentralProvince/engineer', (req, res) => {
+  database.collection('NTCEngTable').find({}).toArray((err, result) => {
+    if (err) throw err
+    res.send(result)
+  })
+})
 
 //data retrieving on local business-North Province Sogo Table-Mega market
 app.get('/api/localMarket/NorthProvince/Sogo', (req, res) => {
@@ -106,6 +114,11 @@ app.get('/api/registerProfiles', (req, res) => {
   })
 })
 
+//localBroker1Chat
+/*app.get("/localBrokerChat1", (req, res) => {
+  res.render("broker-one-chat");
+})*/
+
 MongoClient.connect('mongodb://localhost:27017', { useNewUrlParser: true }, (error, result) => {
   if (error) throw error
   database = result.db('stockMarketDataBase')
@@ -115,3 +128,7 @@ MongoClient.connect('mongodb://localhost:27017', { useNewUrlParser: true }, (err
   })
 });
 //database connection
+
+/*io.on("connection", (socket) => {
+  console.log("User connected: " + socket.id);
+})*/

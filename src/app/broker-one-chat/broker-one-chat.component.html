@@ -1,3 +1,7 @@
+<head>
+  <script src="https://cdn.socket.io/socket.io-3.0.1.min.js"></script>
+</head>
+
 <body onload="LoadBroker1Content()">
   <div id="topicContainer">
     <h1 id="mainTopic"></h1>
@@ -6,4 +10,10 @@
   <div id="input">
     <input id="textId"><button type="submit" id="sendId"></button>
   </div>
+
+  <!--<script>
+    const socket = io('http://localhost:8080')
+
+    socket.on('connection')
+  </script>-->
 </body>

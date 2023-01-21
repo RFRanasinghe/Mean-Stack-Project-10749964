@@ -12,9 +12,11 @@ declare var CentralLoadContent: () => any;
 export class CentralProvincePageComponent {
 
   mukuList: any;
+  engList: any;
 
   constructor(private apiService: ApiService) {
     this.getMukuwaList()
+    this.getEngineerList()
   }
 
   getMukuwaList() {
@@ -27,6 +29,20 @@ export class CentralProvincePageComponent {
       },
       next:(value)=> {
         this.mukuList = value
+      },
+    })
+  }
+
+  getEngineerList() {
+    this.apiService.getCentralEng().subscribe({
+      complete: () => {
+
+      },
+      error: (error) => {
+        console.log(error)
+      },
+      next:(value)=> {
+        this.engList = value
       },
     })
   }
