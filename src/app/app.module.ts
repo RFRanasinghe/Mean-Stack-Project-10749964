@@ -26,6 +26,7 @@ import { BrokerSixChatComponent } from './broker-six-chat/broker-six-chat.compon
 import { BrokerSevenChatComponent } from './broker-seven-chat/broker-seven-chat.component';
 import { BrokerEightChatComponent } from './broker-eight-chat/broker-eight-chat.component';
 import { BrokerNineChatComponent } from './broker-nine-chat/broker-nine-chat.component';
+import { CentralProvincePageComponent } from './central-province-page/central-province-page.component';
 
 @NgModule({
   declarations: [
@@ -50,6 +51,7 @@ import { BrokerNineChatComponent } from './broker-nine-chat/broker-nine-chat.com
     BrokerSevenChatComponent,
     BrokerEightChatComponent,
     BrokerNineChatComponent,
+    CentralProvincePageComponent,
   ],
   imports: [
     FormsModule,
@@ -76,7 +78,8 @@ import { BrokerNineChatComponent } from './broker-nine-chat/broker-nine-chat.com
       { path: 'broker-six-chat', component: BrokerSixChatComponent },
       { path: 'broker-seven-chat', component: BrokerSevenChatComponent },
       { path: 'broker-eight-chat', component: BrokerEightChatComponent },
-      { path: 'broker-nine-chat', component: BrokerNineChatComponent},
+      { path: 'broker-nine-chat', component: BrokerNineChatComponent },
+      { path: 'central-province-page', component: CentralProvincePageComponent },
     ]),
   ],
   providers: [],

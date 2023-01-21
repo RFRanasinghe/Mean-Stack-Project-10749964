@@ -1,0 +1,32 @@
+<body onload="CentralLoadContent()">
+  <div id="centralContainer">
+    <h1 id="centralTopic"></h1>
+  </div>
+
+  <div id="companyContainer">
+    <h2 id="subTopic"></h2>
+  </div>
+
+  <div> <!--odel table-->
+    <table mat-table class="mukuwaTable" id="mukuwaData">
+      <tr id="mukuwaHeading">
+        <th>Category</th>
+        <th>Price per hour</th>
+        <th>Number of projects per month</th>
+        <th>Projects income</th>
+        <th>Targeted income for a month</th>
+      </tr>
+      <tr *ngFor="let mukuwa of mukuList">
+        <td>{{mukuwa.job_sector}}</td>
+        <td style="text-align:center">{{mukuwa.price_per_hour}}</td>
+        <td><span>{{mukuwa.project_num}}</span></td>
+        <td><span>{{mukuwa.income}}</span></td>
+        <td><span>{{mukuwa.targeted_income}}</span></td>
+      </tr>
+    </table>
+  </div>
+
+  <div>
+    <img src="/assets/images/central.jpg" alt="central-province image" class="centralImage">
+  </div>
+</body>

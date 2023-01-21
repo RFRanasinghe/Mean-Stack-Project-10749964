@@ -1,13 +1,12 @@
 const express = require('express');
-const cors = require('cors')
-const MongoClient = require('mongodb').MongoClient
+const cors = require('cors');
+const MongoClient = require('mongodb').MongoClient;
 
 const app = express()
 app.use(cors())
 app.use(express.json())
 
 const http = require('http').createServer(app);
-var io = require('socket.io')(http);
 
 var database
 
@@ -25,6 +24,15 @@ app.get('/api/localBroker', (req, res) => {
     res.send(result)
   })
 })
+
+//data retrieving on local business-Central Province Mukuwa Table
+app.get('/api/localMarket/CentralProvince/mukuwa', (req, res) => {
+  database.collection('mukuwaTechTable').find({}).toArray((err, result) => {
+    if (err) throw err
+    res.send(result)
+  })
+})
+
 
 //data retrieving on local business-North Province Sogo Table-Mega market
 app.get('/api/localMarket/NorthProvince/Sogo', (req, res) => {
@@ -98,25 +106,12 @@ app.get('/api/registerProfiles', (req, res) => {
   })
 })
 
-/*import { WebSocketServer } from 'ws';
-
-const wss = new WebSocketServer({ port: 8080 });
-
-wss.on('connection', function connection(ws) {
-  ws.on('message', function message(data) {
-    console.log('received: %s', data);
-  });
-
-  ws.send('something');
-});*/
-
 MongoClient.connect('mongodb://localhost:27017', { useNewUrlParser: true }, (error, result) => {
-    if (error) throw error
-    database = result.db('stockMarketDataBase')
+  if (error) throw error
+  database = result.db('stockMarketDataBase')
   console.log('Database connection established')
   app.listen(8080, () => {
-  console.log('listening on 8080')
-})
+    console.log('listening on 8080')
   })
+});
 //database connection
-

@@ -7,7 +7,7 @@ declare var LoadBroker1Content: () => any;
   templateUrl: './broker-one-chat.component.html',
   styleUrls: ['./broker-one-chat.component.css']
 })
-export class BrokerOneChatComponent{
+export class BrokerOneChatComponent {
   CallLoadBroker1Content() {
     LoadBroker1Content();
   }

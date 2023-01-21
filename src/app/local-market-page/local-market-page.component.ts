@@ -34,6 +34,8 @@ declare var easternMouseOut: () => any;
 declare var northWesternMouseOver: () => any;
 declare var northWesternMouseOut: () => any;
 declare var southernMouseOut: () => any;
+declare var CentralProvinceClick: () => any;
+
 @Component({
   selector: 'app-local-market-page',
   templateUrl: './local-market-page.component.html',
@@ -171,5 +173,9 @@ export class LocalMarketPageComponent {
 
   CallnorthWesternMouseOut() {
     northWesternMouseOut();
+  }
+
+  CallCentralProvinceClick() {
+    CentralProvinceClick();
   }
 }

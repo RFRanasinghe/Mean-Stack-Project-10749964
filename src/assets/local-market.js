@@ -63,6 +63,11 @@ function PersonalProfileFunctionClick() {
   window.location.href="/personal-profile-page";
 }
 
+//button directs to central province page
+function CentralProvinceClick() {
+  window.location.href="/central-province-page";
+}
+
 //mouse over function
 function HomeMouseOver() {
   document.getElementById("homeId").style.backgroundColor = "#E6A400";

@@ -33,7 +33,7 @@
   <div>
     <table class="provinceTable" id="provinceIdTable">
       <tr class="rowMargin">
-        <td><button id="central" class="provinceButton" onmouseover="CentralMouseOver()" onmouseout="CentralMouseOut()"></button></td>
+        <td><button id="central" class="provinceButton" (click)="CallCentralProvinceClick()" onmouseover="CentralMouseOver()" onmouseout="CentralMouseOut()"></button></td>
         <td><button id="northCentral" class="provinceButton" onmouseover="northCentralMouseOver()" onmouseout="northCentralMouseOut()" ></button></td>
         <td><button id="northern" class="provinceButton" onmouseover="northernMouseOver()" onmouseout="northernMouseOut()"></button></td>
       </tr>

@@ -1,6 +1,6 @@
 //            global-broker-page  Component         Component        Component
 
-const { Button } = require("bootstrap");
+/*const { Button } = require("bootstrap");*/
 
 //load content of the page through JAVASCRIPT
 function GlobalBrokerPageLoadFunction()

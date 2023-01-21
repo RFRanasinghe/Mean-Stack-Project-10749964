@@ -14,6 +14,11 @@ private url = 'http://localhost:8080/api';
     return this.httpClient.get(this.url+'/localBroker').pipe(map(data=>data))
   }
 
+  //central province api
+  getCentralMukuwa() {
+    return this.httpClient.get(this.url+'/localMarket/CentralProvince/mukuwa').pipe(map(data=>data));
+  }
+
   //western province api
   getWesternOdel() {
     return this.httpClient.get(this.url+'/localMarket/WesternProvince/Odel').pipe(map(data=>data))

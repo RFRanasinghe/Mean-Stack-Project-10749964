@@ -1,6 +1,6 @@
 //                   register-profile Component          Javascript Codes
 
-const { style } = require("@angular/animations");
+/*const { style } = require("@angular/animations");*/
 
 //register-profile Page Content
 function RegisterLoadFunction()
