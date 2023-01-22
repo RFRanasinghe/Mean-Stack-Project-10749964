@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiService } from './services/api.service';
+import { ChatService } from './services/chat.service';
 
 @Component({
   selector: 'app-root',
@@ -9,13 +10,4 @@ import { ApiService } from './services/api.service';
 export class AppComponent{
   posts: any;
   title = 'StockMarket-site';
-
-  /*constructor(private service: PostService) {
-    ngOnInit() {
-      this.service.getPosts()
-        .subscribe(response => {
-          this.posts = response;
-        });
-  }
-  }*/
 }

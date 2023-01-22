@@ -114,11 +114,7 @@ app.get('/api/registerProfiles', (req, res) => {
   })
 })
 
-//localBroker1Chat
-/*app.get("/localBrokerChat1", (req, res) => {
-  res.render("broker-one-chat");
-})*/
-
+//database connection
 MongoClient.connect('mongodb://localhost:27017', { useNewUrlParser: true }, (error, result) => {
   if (error) throw error
   database = result.db('stockMarketDataBase')
@@ -127,8 +123,20 @@ MongoClient.connect('mongodb://localhost:27017', { useNewUrlParser: true }, (err
     console.log('listening on 8080')
   })
 });
-//database connection
 
-/*io.on("connection", (socket) => {
-  console.log("User connected: " + socket.id);
-})*/
+//socket connection
+const port = 3000;
+
+io.on('connection', (socket) => {
+  console.log('A user connected');
+
+  socket.on('message', (message) => {
+    console.log(message);
+    io.emit('message', `${socket.id.substr(0, 2)}: ${message}`);
+  });
+
+  socket.on('disconnect', () => {
+    console.log('A user disconnected!!!');
+  });
+});
+server.listen(port, () => console.log(`socket listening on port ${port}`));
