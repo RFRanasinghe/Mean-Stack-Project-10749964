@@ -50,6 +50,14 @@ app.get('/api/localMarket/NorthCentralProvince/techScroll', (req, res) => {
   })
 })
 
+//data retrieving on local business-Central Province Ulankulama Table
+app.get('/api/localMarket/NorthCentralProvince/ulankulama', (req, res) => {
+  database.collection('ulankulumaDairy').find({}).toArray((err, result) => {
+    if (err) throw err
+    res.send(result)
+  })
+})
+
 //data retrieving on local business-North Province Sogo Table-Mega market
 app.get('/api/localMarket/NorthProvince/Sogo', (req, res) => {
   database.collection('SogoTable').find({}).toArray((err, result) => {

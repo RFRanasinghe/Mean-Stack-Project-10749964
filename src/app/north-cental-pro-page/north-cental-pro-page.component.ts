@@ -12,9 +12,11 @@ declare var NorthCentralContent: () => any;
 export class NorthCentalProPageComponent {
 
   techList: any;
+  ulankulamaList: any;
 
   constructor(private apiService: ApiService) {
     this.getTechList()
+    this.getUlankulamaList()
   }
 
   getTechList() {
@@ -27,6 +29,20 @@ export class NorthCentalProPageComponent {
       },
       next:(value)=> {
         this.techList = value
+      },
+    })
+  }
+
+  getUlankulamaList() {
+    this.apiService.getNorthCentralUlankulama().subscribe({
+      complete: () => {
+
+      },
+      error: (error) => {
+        console.log(error)
+      },
+      next:(value)=> {
+        this.ulankulamaList = value
       },
     })
   }

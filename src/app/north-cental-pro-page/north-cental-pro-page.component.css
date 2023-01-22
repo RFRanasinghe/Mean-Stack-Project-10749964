@@ -1,11 +1,23 @@
 .northCentralImage{
-  height: 700px;
-  width:580px;
+  height: 732px;
+  width:590px;
+  margin-top: -780px;
 }
 .techTable{
   margin-left: 600px;
 }
 .techTable th,
+td {
+  padding-top: 5px;
+  /* padding-bottom: 20px; */
+  padding-left: 20px;
+  padding-right: 40px;
+  text-align: center;
+}
+.foodTable{
+  margin-left: 600px;
+}
+.foodTable th,
 td {
   padding-top: 5px;
   /* padding-bottom: 20px; */

@@ -26,6 +26,31 @@
     </table>
   </div>
 
+  <div id="dairyContainer">
+    <button id="diaryTopicButton"></button>
+  </div>
+
+  <div> <!--ulankuluma table-->
+    <table mat-table class="foodTable" id="foodData">
+      <tr id="foodHeading">
+        <th>Food Category</th>
+        <th>Stock per month</th>
+        <th>Product selling price</th>
+        <th>Product outcome</th>
+        <th>Product income</th>
+        <th>Product profit</th>
+      </tr>
+      <tr *ngFor="let food of ulankulamaList">
+        <td>{{food.product}}</td>
+        <td style="text-align:center">{{food.stock_per_month}}</td>
+        <td><span>{{food.selling_price}}</span></td>
+        <td><span>{{food.outcome_price}}</span></td>
+        <td><span>{{food.income_price}}</span></td>
+        <td><span>{{food.profit}}</span></td>
+      </tr>
+    </table>
+  </div>
+
   <div>
     <img src="/assets/images/northCentral.jpg" alt="north-central image" class="northCentralImage">
   </div>
