@@ -61,7 +61,7 @@ import { NorthCentalProPageComponent } from './north-cental-pro-page/north-centa
     HttpClientModule,
     AppRoutingModule,
     RouterModule.forRoot([
-      { path:'home-page', component: HomePageComponent },
+      { path:'', component: HomePageComponent },
       { path: 'register-page', component: RegisterPageComponent},
       { path: 'login-page', component: LoginPageComponent},
       { path: 'local-broker-page', component: LocalBrokerPageComponent},

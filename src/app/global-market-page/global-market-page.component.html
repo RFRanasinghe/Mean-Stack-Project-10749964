@@ -4,7 +4,7 @@
   </div>
 
   <div id="spaContainer">
-    <button id="spaCeylonButton"></button>
+    <button id="spaCeylonButton" onmouseover="SpaMouseOver()" onmouseout="SpaMouseOut()" (click)="CallSpaButtonClick()"></button>
   </div>
 
   <div> <!--spa table-->
@@ -32,10 +32,10 @@
   </div>
 
   <div id="louisContainer">
-    <button id="louisButton"></button>
+    <button id="louisButton" onmouseover="LouisMouseOver()" onmouseout="LouisMouseOut()" (click)="CallLouisButtonClick()"></button>
   </div>
 
-  <div> <!--louis table-->
+  <div id="louisDiv"> <!--louis table-->
     <table mat-table class="louisTable" id="louisTableId">
       <tr id="louisHeading">
         <th>Category</th>
@@ -60,7 +60,7 @@
   </div>
 
   <div id="hermerContainer">
-    <button id="hermerButton"></button>
+    <button id="hermerButton" onmouseover="HermerMouseOver()" onmouseout="hermerButton()" (click)="CallHermerButtonClick()"></button>
   </div>
 
   <div> <!--hermer table-->

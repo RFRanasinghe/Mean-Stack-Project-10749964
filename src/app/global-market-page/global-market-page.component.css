@@ -1,6 +1,3 @@
-#topicContainer{
-  padding:8px;
-}
 .globalImage{
   width:39.2%;
   height: 952px;
@@ -8,9 +5,6 @@
 }
 #spaCeylonButton{
   margin-left: 600px;
-  padding: 8px;
-  font-size: 24px;
-  width:60.5%;
 }
 .spaTable{
   margin-left:600px;
@@ -26,11 +20,6 @@ td {
 #louisContainer{
   margin-left: 600px;
 }
-#louisButton{
-  font-size:24px;
-  padding: 8px;
-  width:100%;
-}
 .louisTable{
   margin-left: 600px;
 }
@@ -41,11 +30,6 @@ td {
   padding-left: 20px;
   padding-right: 20px;
   text-align: center;
-}
-#hermerButton{
-  width: 100%;
-  font-size:24px;
-  padding: 8px;
 }
 .hermerTable {
  /* margin-left: 100px;*/

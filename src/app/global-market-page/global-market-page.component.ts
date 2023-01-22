@@ -4,6 +4,15 @@ import { map } from 'rxjs/operators';
 import { ApiService } from '../services/api.service';
 
 declare var globalMarketPageContent: () => any;
+declare var SpaMouseOver: () => any;
+declare var SpaMouseOut: () => any;
+declare var LouisMouseOver: () => any;
+declare var LouisMouseOut: () => any;
+declare var HermerMouseOver: () => any;
+declare var hermerButton: () => any;
+declare var SpaButtonClick: () => any;
+declare var LouisButtonClick: () => any;
+declare var HermerButtonClick: () => any;
 
 @Component({
   selector: 'app-global-market-page',
@@ -66,5 +75,41 @@ export class GlobalMarketPageComponent {
 
   CallglobalMarketPageContent() {
     globalMarketPageContent();
+  }
+
+  CallSpaMouseOver() {
+    SpaMouseOver();
+  }
+
+  CallSpaMouseOut() {
+    SpaMouseOut();
+  }
+
+  CallLouisMouseOver() {
+    LouisMouseOver();
+  }
+
+  CallLouisMouseOut() {
+    LouisMouseOut();
+  }
+
+  CallHermerMouseOver() {
+    HermerMouseOver();
+  }
+
+  CallhermerButton() {
+    hermerButton();
+  }
+
+  CallSpaButtonClick() {
+    SpaButtonClick();
+  }
+
+  CallLouisButtonClick() {
+    LouisButtonClick();
+  }
+
+  CallHermerButtonClick() {
+    HermerButtonClick();
   }
 }
