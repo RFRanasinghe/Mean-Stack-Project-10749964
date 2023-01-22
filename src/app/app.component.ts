@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiService } from './services/api.service';
-import { ChatService } from './services/chat.service';
+import { BrokerChatService} from './services/broker-chat.service';
 
 @Component({
   selector: 'app-root',

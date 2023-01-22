@@ -1,0 +1,32 @@
+<body onload="NorthCentralContent()">
+  <div id="northCentralContain" class="northCenClass">
+    <h1 id="northCenMainTopic"></h1>
+  </div>
+
+  <div id="techContainer">
+    <button id="techTopicButton"></button>
+  </div>
+
+  <div> <!--TechScroll table-->
+    <table mat-table class="techTable" id="techData">
+      <tr id="techHeading">
+        <th>Job Category</th>
+        <th>Number of Projects per month</th>
+        <th>Average Project price</th>
+        <th>Project income</th>
+        <th>Profit per month</th>
+      </tr>
+      <tr *ngFor="let tech of techList">
+        <td>{{tech.category}}</td>
+        <td style="text-align:center">{{tech.projects_per_month}}</td>
+        <td><span>{{tech.average_price}}</span></td>
+        <td><span>{{tech.income}}</span></td>
+        <td><span>{{tech.profit}}</span></td>
+      </tr>
+    </table>
+  </div>
+
+  <div>
+    <img src="/assets/images/northCentral.jpg" alt="north-central image" class="northCentralImage">
+  </div>
+</body>

@@ -42,6 +42,14 @@ app.get('/api/localMarket/CentralProvince/engineer', (req, res) => {
   })
 })
 
+//data retrieving on local business-North Central Province TechScroll Table
+app.get('/api/localMarket/NorthCentralProvince/techScroll', (req, res) => {
+  database.collection('TechScroll').find({}).toArray((err, result) => {
+    if (err) throw err
+    res.send(result)
+  })
+})
+
 //data retrieving on local business-North Province Sogo Table-Mega market
 app.get('/api/localMarket/NorthProvince/Sogo', (req, res) => {
   database.collection('SogoTable').find({}).toArray((err, result) => {

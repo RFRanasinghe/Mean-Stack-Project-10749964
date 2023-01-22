@@ -1,0 +1,15 @@
+.northCentralImage{
+  height: 700px;
+  width:580px;
+}
+.techTable{
+  margin-left: 600px;
+}
+.techTable th,
+td {
+  padding-top: 5px;
+  /* padding-bottom: 20px; */
+  padding-left: 20px;
+  padding-right: 40px;
+  text-align: center;
+}

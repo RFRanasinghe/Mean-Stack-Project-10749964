@@ -23,6 +23,11 @@ private url = 'http://localhost:8080/api';
     return this.httpClient.get(this.url+'/localMarket/CentralProvince/engineer').pipe(map(data=>data));
   }
 
+  //north central province api
+  getNorthCentralProvince() {
+    return this.httpClient.get(this.url+'/localMarket/NorthCentralProvince/techScroll').pipe(map(data=>data));
+  }
+
   //western province api
   getWesternOdel() {
     return this.httpClient.get(this.url+'/localMarket/WesternProvince/Odel').pipe(map(data=>data))
