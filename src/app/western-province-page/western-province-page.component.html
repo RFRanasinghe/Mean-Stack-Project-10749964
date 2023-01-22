@@ -35,10 +35,10 @@
   </div>
 
   <div>
-    <button id="aliyaButtonShow" class="aliyaShowClass"></button>
+    <button id="aliyaButtonShow" class="aliyaShowClass" onmouseover="AliyaOnMouseHover()" onmouseout="AliyaMouseOutHover()" (click)="CallAliyaButtonClick()"></button>
   </div>
   <div> <!--aliya table-->
-    <table mat-table class="aliyaTable">
+    <table mat-table class="aliyaTable" id="aliyaTblId">
       <tr id="aliyaHeading">
         <th>Category</th>
         <th>Number of Types</th>
@@ -62,11 +62,11 @@
   </div>
 
   <div>
-    <button id="mimosaShowButton" class="mimosaShowClass"></button>
+    <button id="mimosaShowButton" class="mimosaShowClass" (click)="CallMimosaButtonClick()" onmouseover="MimosaOnMouseHover()" onmouseout="MimosaMouseOutHover()"></button>
   </div>
 
   <div>
-    <table mat-table class="mimosaTable">
+    <table mat-table class="mimosaTable" id="mimosaTblId">
       <tr id="aliyaHeading">
         <th>Category</th>
         <th>Number of Types</th>

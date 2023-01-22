@@ -3,6 +3,12 @@ import { map } from 'rxjs/operators';
 import { ApiService } from '../services/api.service';
 
 declare var WesternProContentFunction: () => any;
+declare var AliyaButtonClick: () => any;
+declare var MimosaButtonClick: () => any;
+declare var AliyaOnMouseHover: () => any;
+declare var AliyaMouseOutHover: () => any;
+declare var MimosaOnMouseHover: () => any;
+declare var MimosaMouseOutHover: () => any;
 
 @Component({
   selector: 'app-western-province-page',
@@ -66,5 +72,29 @@ export class WesternProvincePageComponent {
   //load page content function
   CallWesternProContentFunction() {
     WesternProContentFunction();
+  }
+
+  CallAliyaButtonClick() {
+    AliyaButtonClick();
+  }
+
+  CallMimosaButtonClick() {
+    MimosaButtonClick();
+  }
+
+  CallAliyaOnMouseHover() {
+    AliyaOnMouseHover();
+  }
+
+  CallAliyaMouseOutHover() {
+    AliyaMouseOutHover();
+  }
+
+  CallMimosaOnMouseHover() {
+    MimosaOnMouseHover();
+  }
+
+  CallMimosaMouseOutHover() {
+    MimosaMouseOutHover();
   }
 }
