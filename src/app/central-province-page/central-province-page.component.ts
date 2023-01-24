@@ -3,6 +3,12 @@ import { map } from 'rxjs/operators';
 import { ApiService } from '../services/api.service';
 
 declare var CentralLoadContent: () => any;
+declare var MukuwaButtonClick: () => any;
+declare var EngButtonClick: () => any;
+declare var MukuwaMouseOver: () => any;
+declare var MukuwaMouseOut: () => any;
+declare var EngMouseOver: () => any;
+declare var EngMouseOut: () => any;
 
 @Component({
   selector: 'app-central-province-page',
@@ -49,5 +55,29 @@ export class CentralProvincePageComponent {
 
   CallCentralLoadContent() {
     CentralLoadContent();
+  }
+
+  CallMukuwaButtonClick() {
+    MukuwaButtonClick();
+  }
+
+  CallEngButtonClick() {
+    EngButtonClick();
+  }
+
+  CallMukuwaMouseOver() {
+    MukuwaMouseOver();
+  }
+
+  CallMukuwaMouseOut() {
+    MukuwaMouseOut();
+  }
+
+  CallEngMouseOver() {
+    EngMouseOver();
+  }
+
+  CallEngMouseOut() {
+    EngMouseOut();
   }
 }

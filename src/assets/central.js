@@ -38,3 +38,49 @@ function CentralLoadContent() {
   document.getElementById("engId").style.fontSize = "32px";
 }
    window.onload = CentralLoadContent;
+
+  //onmouse hover
+  function MukuwaMouseOver() {
+    document.getElementById("subTopic").style.backgroundColor = "#EA5C2B";
+    document.getElementById("subTopic").style.color = "white";
+}
+
+  //onmouse hover
+  function EngMouseOver() {
+    document.getElementById("engId").style.backgroundColor = "#EA5C2B";
+    document.getElementById("engId").style.color = "white";
+  }
+
+  //mouseout hover
+  function MukuwaMouseOut() {
+    document.getElementById("subTopic").style.backgroundColor = "#F8BD7F";
+    document.getElementById("subTopic").style.color = "black";
+}
+
+  //mouseout hover
+  function EngMouseOut() {
+    document.getElementById("engId").style.backgroundColor = "#F8BD7F";
+    document.getElementById("engId").style.color = "black";
+  }
+
+  //hide and show mukuwa table content with button click
+  function MukuwaButtonClick() {
+    var x = document.getElementById("mukuwaData");
+
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+
+  //hide and show eng table content with button click
+  function EngButtonClick() {
+    var x = document.getElementById("engData");
+
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
