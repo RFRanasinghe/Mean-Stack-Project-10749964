@@ -3,6 +3,8 @@ import { map } from 'rxjs/operators';
 import { ApiService } from '../services/api.service';
 
 declare var NorthContentFunction: () => any;
+declare var SogoButtonClick: () => any;
+declare var JewelButtonClick: () => any;
 
 @Component({
   selector: 'app-north-province-page',
@@ -49,5 +51,13 @@ export class NorthProvincePageComponent {
 
   CallNorthContentFunction() {
     NorthContentFunction();
+  }
+
+  CallSogoButtonClick() {
+    SogoButtonClick();
+  }
+
+  CallJewelButtonClick() {
+    JewelButtonClick();
   }
 }

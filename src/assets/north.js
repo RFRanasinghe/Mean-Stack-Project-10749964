@@ -29,3 +29,25 @@ function NorthContentFunction() {
   document.getElementById("companyTopic").style.textAlign = "right";
 }
 window.onload = NorthContentFunction;
+
+//hide and show sogo table content with button click
+  function SogoButtonClick() {
+    var x = document.getElementById("sogoData");
+
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+
+  //hide and show jewellery table content with button click
+  function JewelButtonClick() {
+    var x = document.getElementById("jewelData");
+
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
