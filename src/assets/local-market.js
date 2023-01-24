@@ -92,6 +92,11 @@ function CentralProvinceClick() {
   window.location.href="/central-province-page";
 }
 
+//button directs to central province page
+function NorthCentralProvinceClick() {
+  window.location.href="/north-central-pro-page";
+}
+
 //button directs to northern province page
 function NorthernProvinceClick() {
   window.location.href="/north-province-page";
