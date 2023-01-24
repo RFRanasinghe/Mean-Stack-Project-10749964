@@ -19,7 +19,8 @@ function LocalMarketPageLoadFunction()
     document.getElementById("western").innerHTML="Western Province";
 
     //background colors
-    document.getElementById("central").style.backgroundColor="#3C4048"; //buttons
+    document.getElementById("sideTableId").style.backgroundColor = "rgb(0, 0, 0)";
+    document.getElementById("central").style.backgroundColor = "#3C4048"; //buttons
     document.getElementById("northCentral").style.backgroundColor="#3C4048";
     document.getElementById("northern").style.backgroundColor="#3C4048";
     document.getElementById("eastern").style.backgroundColor="#3C4048";
@@ -29,6 +30,29 @@ function LocalMarketPageLoadFunction()
     document.getElementById("sabaragamuwa").style.backgroundColor="#3C4048";
     document.getElementById("western").style.backgroundColor="#3C4048";
     document.getElementById("topicId").style.backgroundColor = "#FF7B54";
+
+    //border color
+    document.getElementById("central").style.borderColor = "#E6A400"; //buttons
+    document.getElementById("northCentral").style.borderColor="#E6A400";
+    document.getElementById("northern").style.borderColor="#E6A400";
+    document.getElementById("eastern").style.borderColor="#E6A400";
+    document.getElementById("northWestern").style.borderColor="#E6A400";
+    document.getElementById("southern").style.borderColor="#E6A400";
+    document.getElementById("uva").style.borderColor="#E6A400";
+    document.getElementById("sabaragamuwa").style.borderColor="#E6A400";
+    document.getElementById("western").style.borderColor="#E6A400";
+
+    //font size
+    document.getElementById("topicHead").style.fontSize = "30px";
+
+    //alignment
+    document.getElementById("topicHead").style.textAlign = "center";
+
+    //padding
+    document.getElementById("topicHead").style.padding = "8px";
+
+    //width
+    document.getElementById("sideTableId").style.width = "350px";
   }
          window.onload = LocalMarketPageLoadFunction;
 
@@ -163,37 +187,37 @@ function PersonalMouseOut() {
 
 //               mouseout function for province table
 function CentralMouseOut() {
-  document.getElementById("provinceIdTable").style.backgroundColor=""; // table
+  document.getElementById("central").style.backgroundColor="#3C4048"; // table
 }
 
 function northCentralMouseOut() {
-  document.getElementById("northCentral").style.backgroundColor="";
+  document.getElementById("northCentral").style.backgroundColor="#3C4048";
 }
 
 function northernMouseOut() {
-  document.getElementById("northern").style.backgroundColor="";
+  document.getElementById("northern").style.backgroundColor="#3C4048";
 }
 
 function easternMouseOut() {
-  document.getElementById("eastern").style.backgroundColor="";
+  document.getElementById("eastern").style.backgroundColor="#3C4048";
 }
 
 function northWesternMouseOut() {
-  document.getElementById("northWestern").style.backgroundColor="";
+  document.getElementById("northWestern").style.backgroundColor="#3C4048";
 }
 
 function southernMouseOut() {
-  document.getElementById("southern").style.backgroundColor = "";
+  document.getElementById("southern").style.backgroundColor = "#3C4048";
 }
 
 function uvaMouseOut() {
-  document.getElementById("uva").style.backgroundColor="";
+  document.getElementById("uva").style.backgroundColor="#3C4048";
 }
 
 function sabaMouseOut() {
-  document.getElementById("sabaragamuwa").style.backgroundColor="";
+  document.getElementById("sabaragamuwa").style.backgroundColor="#3C4048";
 }
 
 function WesternMouseOut() {
-  document.getElementById("western").style.backgroundColor="";
+  document.getElementById("western").style.backgroundColor="#3C4048";
 }

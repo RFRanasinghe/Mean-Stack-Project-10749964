@@ -6,7 +6,7 @@
     <img src="/assets/images/localMpic.png" alt="local-market image" class="localImage">
   </div>
 
-  <table class="sideTable">
+  <table class="sideTable" id="sideTableId">
     <tr>
       <td class="sideTab"><button id="homeId" class="sideButton" onmouseover="HomeMouseOver()" onmouseout="HomeMouseOut()"></button></td>
     </tr>
@@ -40,14 +40,14 @@
 
       <tr class="rowMargin">
         <td><button id="eastern" class="provinceButton" onmouseover="easternMouseOver()" onmouseout="easternMouseOut()"></button></td>
-        <td><button id="northWestern" class="provinceButton" onmouseover="northWesternMouseOver()" ></button></td>
+        <td><button id="northWestern" class="provinceButton" onmouseover="northWesternMouseOver()" onmouseout="northWesternMouseOut()"></button></td>
         <td><button id="southern" class="provinceButton" onmouseover="southernMouseOver()" onmouseout="southernMouseOut()"></button></td>
       </tr>
 
       <tr class="rowMargin">
-        <td><button id="uva" class="provinceButton"></button></td>
-        <td><button id="sabaragamuwa" class="provinceButton"></button></td>
-        <td><button id="western" class="provinceButton" (click)="CallDirectWesternProvinceFunctionClick()"></button></td>
+        <td><button id="uva" class="provinceButton" onmouseover="uvaMouseOver()" onmouseout="uvaMouseOut()"></button></td>
+        <td><button id="sabaragamuwa" class="provinceButton" onmouseover="sabaMouseOver()" onmouseout="sabaMouseOut()"></button></td>
+        <td><button id="western" class="provinceButton" (click)="CallDirectWesternProvinceFunctionClick()" onmouseover="WesternMouseOver()" onmouseout="WesternMouseOut()"></button></td>
       </tr>
     </table>
   </div>

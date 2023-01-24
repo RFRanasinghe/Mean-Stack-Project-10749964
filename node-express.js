@@ -2,12 +2,10 @@ const express = require('express');
 const cors = require('cors');
 const MongoClient = require('mongodb').MongoClient;
 
-const app = express()
+const app = express();
 app.use(cors())
 app.use(express.json())
 
-const server = require('http').createServer(app);
-const io = require('socket.io')(server, {cors: { origin: "*"}})
 
 var database
 
@@ -141,7 +139,9 @@ MongoClient.connect('mongodb://localhost:27017', { useNewUrlParser: true }, (err
 });
 
 //socket connection
-const port = 3000;
+
+
+/*const port = 3000;
 
 io.on('connection', (socket) => {
   console.log('A user connected');
@@ -155,4 +155,6 @@ io.on('connection', (socket) => {
     console.log('A user disconnected!!!');
   });
 });
-server.listen(port, () => console.log(`socket listening on port ${port}`));
+server.listen(port, () => console.log(`socket listening on port ${port}`));*/
+
+

@@ -35,6 +35,12 @@ declare var northWesternMouseOver: () => any;
 declare var northWesternMouseOut: () => any;
 declare var southernMouseOut: () => any;
 declare var CentralProvinceClick: () => any;
+declare var uvaMouseOver: () => any;
+declare var uvaMouseOut: () => any;
+declare var sabaMouseOver: () => any;
+declare var sabaMouseOut: () => any;
+declare var WesternMouseOver: () => any;
+declare var WesternMouseOut: () => any;
 
 @Component({
   selector: 'app-local-market-page',
@@ -177,5 +183,29 @@ export class LocalMarketPageComponent {
 
   CallCentralProvinceClick() {
     CentralProvinceClick();
+  }
+
+  CalluvaMouseOver() {
+    uvaMouseOver();
+  }
+
+  CalluvaMouseOut() {
+    uvaMouseOut();
+  }
+
+  CallsabaMouseOver() {
+    sabaMouseOver();
+  }
+
+  CallsabaMouseOut() {
+    sabaMouseOut();
+  }
+
+  CallWesternMouseOver() {
+    WesternMouseOver();
+  }
+
+  CallWesternMouseOut() {
+    WesternMouseOut();
   }
 }
