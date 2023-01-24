@@ -8,6 +8,7 @@ declare var GlobalBrokerPageFunctionClick: () => any;
 declare var HistoryPageFunctionClick: () => any;
 declare var PersonalProfileFunctionClick: () => any;
 declare var DirectWesternProvinceFunctionClick: () => any;
+declare var NorthernProvinceClick: () => any;
 declare var HomeMouseOver: () => any;
 declare var HomeMouseOut: () => any;
 declare var RegisterMouseOver: () => any;
@@ -79,6 +80,10 @@ export class LocalMarketPageComponent {
 
   CallDirectWesternProvinceFunctionClick() {
     DirectWesternProvinceFunctionClick();
+  }
+
+   CallNorthernProvinceClick() {
+    NorthernProvinceClick();
   }
 
   CallHomeMouseOver() {
