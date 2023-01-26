@@ -23,6 +23,10 @@ function EasternContentLoad() {
   document.getElementById("EasternContainer").style.backgroundColor = "#52734D";
   document.getElementById("omegaTopic").style.backgroundColor = "#0081B4";
   document.getElementById("kWorldTopic").style.backgroundColor = "#0081B4";
+  document.getElementById("omegaHeading").style.backgroundColor = "#FADA9D";
+  document.getElementById("omegaData").style.backgroundColor = "#FBF1D3";
+  document.getElementById("worldHeading").style.backgroundColor = "#FADA9D";
+  document.getElementById("worldTable").style.backgroundColor = "#FBF1D3";
 
   //border color
   document.getElementById("omegaTopic").style.borderColor = "#0081B4";
@@ -40,7 +44,12 @@ function EasternContentLoad() {
 
   //padding
   document.getElementById("EasternContainer").style.padding = "6px";
+  document.getElementById("omegaSubContainer").style.paddingTop = "8px";
   document.getElementById("omegaTopic").style.padding = "6px";
   document.getElementById("kWorldTopic").style.padding = "6px";
+  document.getElementById("kWorldSubContainer").style.paddingTop = "10px";
+
+  //fixed image
+  document.getElementById("esId").style.backgroundAttachment = "fixed";
 }
   window.onload = EasternContentLoad;
