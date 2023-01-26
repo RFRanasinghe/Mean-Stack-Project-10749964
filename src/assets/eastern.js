@@ -53,3 +53,25 @@ function EasternContentLoad() {
   document.getElementById("esId").style.backgroundAttachment = "fixed";
 }
   window.onload = EasternContentLoad;
+
+  //hide and show mimosa omega table content with button click
+function OmegaButtonClick() {
+  var x = document.getElementById("omegaData");
+
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+//hide and show mimosa omega table content with button click
+function WorldButtonClick() {
+  var x = document.getElementById("worldTable");
+
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}

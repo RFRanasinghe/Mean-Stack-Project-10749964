@@ -3,6 +3,8 @@ import { map } from 'rxjs/operators';
 import { ApiService } from '../services/api.service';
 
 declare var EasternContentLoad: () => any;
+declare var OmegaButtonClick: () => any;
+declare var WorldButtonClick: () => any;
 
 @Component({
   selector: 'app-eastern-province-page',
@@ -49,5 +51,13 @@ export class EasternProvincePageComponent {
 
   CallEasternContentLoad() {
     EasternContentLoad();
+  }
+
+  CallOmegaButtonClick() {
+    OmegaButtonClick();
+  }
+
+  CallWorldButtonClick() {
+    WorldButtonClick();
   }
 }
