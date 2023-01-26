@@ -1,3 +1,5 @@
+const { Socket } = require("socket.io-client");
+
 //content load on broker1 chat page
 function LoadBroker1Content() {
   document.getElementById("mainTopic").innerHTML = "Central Province Broker Contact Page";
@@ -9,9 +11,16 @@ function LoadBroker1Content() {
 
   //font style
   document.getElementById("sendId").style.fontStyle = "italic";
+  document.getElementById("textId").style.fontStyle = "italic";
 
   //font color
   document.getElementById("mainTopic").style.color = "#F8BD7F";
+
+  //placeholder
+  document.getElementById("textId").placeholder = "Type your message here..";
+
+  //height
+  //document.getElementById("textId").style.height = "40px";
 
   //element align
   document.getElementById("mainTopic").style.textAlign = "center";

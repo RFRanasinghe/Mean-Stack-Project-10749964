@@ -1,0 +1,53 @@
+<body onload="EasternContentLoad()">
+  <div id="EasternContainer">
+    <h1 id="easternTopic"></h1>
+  </div>
+
+  <div id="omegaSubContainer">
+    <button id="omegaTopic"></button>
+  </div>
+
+  <div>
+    <table mat-table class="omegaTable" id="omegaData">
+      <tr id="omegaHeading">
+        <th>Job category</th>
+        <th>Fee range</th>
+        <th>Monthly income</th>
+        <th>Yearly income</th>
+      </tr>
+      <tr *ngFor="let omega of omegaList">
+        <td>{{omega.category}}</td>
+        <td style="text-align:center">{{omega.fee_range}}</td>
+        <td><span>{{omega.month_income}}</span></td>
+        <td><span>{{omega.year_income}}</span></td>
+      </tr>
+    </table>
+  </div>
+
+  <div id="kWorldSubContainer">
+    <button id="kWorldTopic"></button>
+  </div>
+
+  <div>
+    <table mat-table class="worldTable" id="worldTable">
+      <tr id="worldHeading">
+        <th>Job category</th>
+        <th>Number of projects per month</th>
+        <th>Average price for projects</th>
+        <th>Monthly income</th>
+        <th>Targeted income</th>
+      </tr>
+      <tr *ngFor="let world of kworldList">
+        <td>{{world.category}}</td>
+        <td style="text-align:center">{{world.month_projects}}</td>
+        <td><span>{{world.average_price}}</span></td>
+        <td><span>{{world.month_income}}</span></td>
+        <td><span>{{world.targeted_value}}</span></td>
+      </tr>
+    </table>
+  </div>
+
+  <div>
+    <img src="/assets/images/eastern.png" alt="eastern-market image" class="easternImage">
+  </div>
+</body>

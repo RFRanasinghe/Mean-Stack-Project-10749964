@@ -102,6 +102,11 @@ function NorthernProvinceClick() {
   window.location.href="/north-province-page";
 }
 
+//button directs to eastern province page
+function EasternProvinceClick() {
+  window.location.href="/eastern-province-page";
+}
+
 //mouse over function
 function HomeMouseOver() {
   document.getElementById("homeId").style.backgroundColor = "#E6A400";

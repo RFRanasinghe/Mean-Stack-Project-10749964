@@ -39,11 +39,6 @@ function RegisterLoadContentFunction()
 
     //change font color
   document.getElementById("mainTopic").style.color="white";
-  document.getElementById("province").style.color = "white";
-  document.getElementById("brokerId").style.color = "white";
-  document.getElementById("brokerName").style.color = "white";
-  document.getElementById("brokerNumber").style.color = "white";
-  document.getElementById("brokerMail").style.color = "white";
   document.getElementById("mainTopic").style.color = "white";
   }
          window.onload = RegisterLoadContentFunction;

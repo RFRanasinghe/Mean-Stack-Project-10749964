@@ -10,6 +10,7 @@ declare var PersonalProfileFunctionClick: () => any;
 declare var DirectWesternProvinceFunctionClick: () => any;
 declare var NorthCentralProvinceClick: () => any;
 declare var NorthernProvinceClick: () => any;
+declare var EasternProvinceClick: () => any;
 declare var HomeMouseOver: () => any;
 declare var HomeMouseOut: () => any;
 declare var RegisterMouseOver: () => any;
@@ -89,6 +90,10 @@ export class LocalMarketPageComponent {
 
    CallNorthernProvinceClick() {
     NorthernProvinceClick();
+  }
+
+  CallEasternProvinceClick() {
+    EasternProvinceClick();
   }
 
   CallHomeMouseOver() {

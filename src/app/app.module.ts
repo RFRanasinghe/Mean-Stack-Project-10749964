@@ -28,6 +28,7 @@ import { BrokerEightChatComponent } from './broker-eight-chat/broker-eight-chat.
 import { BrokerNineChatComponent } from './broker-nine-chat/broker-nine-chat.component';
 import { CentralProvincePageComponent } from './central-province-page/central-province-page.component';
 import { NorthCentalProPageComponent } from './north-cental-pro-page/north-cental-pro-page.component';
+import { EasternProvincePageComponent } from './eastern-province-page/eastern-province-page.component';
 
 @NgModule({
   declarations: [
@@ -54,6 +55,7 @@ import { NorthCentalProPageComponent } from './north-cental-pro-page/north-centa
     BrokerNineChatComponent,
     CentralProvincePageComponent,
     NorthCentalProPageComponent,
+    EasternProvincePageComponent,
   ],
   imports: [
     FormsModule,
@@ -82,7 +84,8 @@ import { NorthCentalProPageComponent } from './north-cental-pro-page/north-centa
       { path: 'broker-eight-chat', component: BrokerEightChatComponent },
       { path: 'broker-nine-chat', component: BrokerNineChatComponent },
       { path: 'central-province-page', component: CentralProvincePageComponent },
-      { path: 'north-central-pro-page', component: NorthCentalProPageComponent},
+      { path: 'north-central-pro-page', component: NorthCentalProPageComponent },
+      { path: 'eastern-province-page', component: EasternProvincePageComponent},
     ]),
   ],
   providers: [],

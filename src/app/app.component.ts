@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiService } from './services/api.service';
-import { BrokerChatService} from './services/broker-chat.service';
+import { BrokerChatService } from './services/broker-chat.service';
+import * as socketIo from 'socket.io-client';
 
 @Component({
   selector: 'app-root',
@@ -10,4 +11,5 @@ import { BrokerChatService} from './services/broker-chat.service';
 export class AppComponent{
   posts: any;
   title = 'StockMarket-site';
+
 }

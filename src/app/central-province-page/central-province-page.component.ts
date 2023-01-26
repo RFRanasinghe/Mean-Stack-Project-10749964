@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { map } from 'rxjs/operators';
 import { ApiService } from '../services/api.service';
 
@@ -15,10 +15,11 @@ declare var EngMouseOut: () => any;
   templateUrl: './central-province-page.component.html',
   styleUrls: ['./central-province-page.component.css']
 })
-export class CentralProvincePageComponent {
+export class CentralProvincePageComponent{
 
   mukuList: any;
   engList: any;
+  centralChartData: any;
 
   constructor(private apiService: ApiService) {
     this.getMukuwaList()
@@ -52,6 +53,8 @@ export class CentralProvincePageComponent {
       },
     })
   }
+
+
 
   CallCentralLoadContent() {
     CentralLoadContent();

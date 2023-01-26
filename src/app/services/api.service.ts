@@ -23,6 +23,11 @@ private url = 'http://localhost:8080/api';
     return this.httpClient.get(this.url+'/localMarket/CentralProvince/engineer').pipe(map(data=>data));
   }
 
+  //charts for central province companies api
+  getCentralChartInfo() {
+    return this.httpClient.get("http://localhost:8080/api/localMarket/CentralProvince/mukuwa");
+  }
+
   //north central province api
   getNorthCentralProvince() {
     return this.httpClient.get(this.url+'/localMarket/NorthCentralProvince/techScroll').pipe(map(data=>data));
@@ -31,6 +36,15 @@ private url = 'http://localhost:8080/api';
   //north central province api
   getNorthCentralUlankulama() {
     return this.httpClient.get(this.url+'/localMarket/NorthCentralProvince/ulankulama').pipe(map(data=>data));
+  }
+
+  //eastern province api
+  getEasternOmega() {
+    return this.httpClient.get(this.url+'/localMarket/EasternProvince/omega').pipe(map(data=>data));
+  }
+
+  getEasternKWorld() {
+    return this.httpClient.get(this.url+'/localMarket/EasternProvince/kworld').pipe(map(data=>data));
   }
 
   //western province api

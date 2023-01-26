@@ -1,27 +1,20 @@
 import { Injectable } from '@angular/core';
-import { BehaviorSubject, Observable } from 'rxjs';
-import { io } from "socket.io-client";
+import { Observable, Observer } from 'rxjs';
+import { AnonymousSubject } from 'rxjs/internal/Subject';
+import { Subject } from 'rxjs';
+import { map } from 'rxjs/operators';
+import io from "socket.io-client";
 
+const ChatUrl = "ws://localhost:3000";
+
+export interface Message{
+  source: string;
+  content: string;
+}
 @Injectable({
   providedIn: 'root'
 })
+
 export class BrokerChatService {
 
-  public message$: BehaviorSubject<string> = new BehaviorSubject('');
-  constructor() { }
-
-   socket = io('http://localhost:3000');
-
-  public sendMessage(message: any) {
-    console.log('sendMessage: ', message)
-    this.socket.emit('message', message);
-  }
-
-  public getNewMessage = () => {
-    this.socket.on('message', (message) =>{
-      this.message$.next(message);
-    });
-
-    return this.message$.asObservable();
-  };
 }
