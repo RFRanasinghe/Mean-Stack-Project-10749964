@@ -5,6 +5,7 @@ import { ApiService } from '../services/api.service';
 declare var SouthernContent: () => any;
 declare var MegaOnMouse: () => any;
 declare var MegaOutMouse: () => any;
+declare var MegaButtonClick: () => any;
 
 @Component({
   selector: 'app-southern-provice-page',
@@ -43,5 +44,9 @@ export class SouthernProvicePageComponent {
 
   CallMegaOutMouse() {
     MegaOutMouse();
+  }
+
+  CallMegaButtonClick() {
+    MegaButtonClick();
   }
 }

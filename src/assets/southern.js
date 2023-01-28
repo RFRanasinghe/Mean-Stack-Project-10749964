@@ -8,6 +8,8 @@ function SouthernContent() {
   //background color
   document.getElementById("HeadContainer").style.backgroundColor = "#31087B";
   document.getElementById("MegaId").style.backgroundColor = "#80558C";
+  document.getElementById("megaHeading").style.backgroundColor = "#FFCBCB";
+  document.getElementById("megaData").style.backgroundColor = "#E7FBBE";
 
   //border color
   document.getElementById("MegaId").style.borderColor = "#80558C";
@@ -41,3 +43,14 @@ function MegaOnMouse() {
 function MegaOutMouse() {
   document.getElementById("MegaId").style.backgroundColor = "#80558C";
 }
+
+//hide and show suthern table content with button click
+  function MegaButtonClick() {
+    var x = document.getElementById("megaData");
+
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
