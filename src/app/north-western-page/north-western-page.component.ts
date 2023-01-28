@@ -2,6 +2,11 @@ import { Component } from '@angular/core';
 import { map } from 'rxjs/operators';
 import { ApiService } from '../services/api.service';
 
+declare var CycloOnMouse: () => any;
+declare var CycloOutMouse: () => any;
+declare var JiffyOnMouse: () => any;
+declare var JiffyOutMouse: () => any;
+
 @Component({
   selector: 'app-north-western-page',
   templateUrl: './north-western-page.component.html',
@@ -43,5 +48,21 @@ export class NorthWesternPageComponent {
         this.jiffyList = value
       },
     })
+  }
+
+  CallCycloOnMouse() {
+    CycloOnMouse();
+  }
+
+  CallCycloOutMouse() {
+    CycloOutMouse();
+  }
+
+  CallJiffyOnMouse() {
+    JiffyOnMouse();
+  }
+
+  CallJiffyOutMouse() {
+    JiffyOutMouse();
   }
 }

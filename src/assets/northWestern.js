@@ -42,3 +42,25 @@ function NorthWesternContent() {
 
 }
   window.onload = NorthWesternContent;
+
+  //on mouse hover in cyclomax table
+function CycloOnMouse() {
+  document.getElementById("cyclomaxBtn").style.backgroundColor = "#68B984";
+  document.getElementById("cyclomaxBtn").style.color = "white";
+}
+
+function JiffyOnMouse() {
+  document.getElementById("jiffyBtn").style.backgroundColor = "#68B984";
+  document.getElementById("jiffyBtn").style.color = "white";
+}
+
+//out mouse hover in cyclomax table
+function CycloOutMouse() {
+  document.getElementById("cyclomaxBtn").style.backgroundColor = "#C0EEE4";
+  document.getElementById("cyclomaxBtn").style.color = "black";
+}
+
+function JiffyOutMouse() {
+  document.getElementById("jiffyBtn").style.backgroundColor = "#C0EEE4";
+  document.getElementById("jiffyBtn").style.color = "black";
+}
