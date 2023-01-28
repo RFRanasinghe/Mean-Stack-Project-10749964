@@ -117,6 +117,10 @@ function SouthernClick() {
   window.location.href="/southern-provice-page";
 }
 
+//button directs to uva province page
+function UvaClick() {
+  window.location.href="/uva-province-page";
+}
 
 //mouse over function
 function HomeMouseOver() {

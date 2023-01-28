@@ -46,6 +46,7 @@ declare var WesternMouseOver: () => any;
 declare var WesternMouseOut: () => any;
 declare var NorthWesternClick: () => any;
 declare var SouthernClick: () => any;
+declare var UvaClick: () => any;
 
 @Component({
   selector: 'app-local-market-page',
@@ -104,6 +105,10 @@ export class LocalMarketPageComponent {
 
   CallSouthernClick() {
     SouthernClick();
+  }
+
+  CallUvaClick() {
+    UvaClick();
   }
 
   CallHomeMouseOver() {

@@ -1,0 +1,51 @@
+<body>
+  <div id="HeadContainer">
+    <h1 id="UvaHeading"></h1>
+  </div>
+
+  <div>
+    <button id="teaButton"></button>
+  </div>
+
+  <div>
+    <table mat-table class="teaTable" id="teaData">
+      <tr id="teaHeading">
+        <th>Product Category</th>
+        <th>Stock per month</th>
+        <th>Product selling Price</th>
+        <th>Product outcome</th>
+        <th>Product income</th>
+      </tr>
+      <tr *ngFor="let tea of halpeList">
+        <td>{{tea.product}}</td>
+        <td style="text-align:center">{{tea.stock}}</td>
+        <td><span>{{tea.selling_price}}</span></td>
+        <td><span>{{tea.outcome}}</span></td>
+        <td><span>{{tea.income}}</span></td>
+      </tr>
+    </table>
+  </div>
+
+  <div>
+    <button id="teamBtn"></button>
+  </div>
+
+  <div>
+    <table mat-table class="teamTable" id="teamData">
+      <tr id="teamHeading">
+        <th>Service Category</th>
+        <th>Project cost</th>
+        <th>Job posts per month</th>
+      </tr>
+      <tr *ngFor="let team of teamList">
+        <td>{{team.service_category}}</td>
+        <td style="text-align:center">{{team.monthly_cost}}</td>
+        <td><span>{{team.monthly_job_post}}</span></td>
+      </tr>
+    </table>
+  </div>
+
+  <div>
+    <img src="/assets/images/uva.jpg" alt="uva-market image" class="uvaImage">
+  </div>
+</body>

@@ -61,6 +61,15 @@ private url = 'http://localhost:8080/api';
     return this.httpClient.get(this.url+'/localMarket/SouthernProvince/megasuthern').pipe(map(data=>data));
   }
 
+  //uva province api
+  getUvaHalpeTea() {
+    return this.httpClient.get(this.url+'/localMarket/UvaProvince/HalpeTea').pipe(map(data=>data));
+  }
+
+  getUvaBetterTeam() {
+    return this.httpClient.get(this.url+'/localMarket/UvaProvince/betterTeam').pipe(map(data=>data));
+  }
+
   //western province api
   getWesternOdel() {
     return this.httpClient.get(this.url+'/localMarket/WesternProvince/Odel').pipe(map(data=>data))

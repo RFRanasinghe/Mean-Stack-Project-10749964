@@ -114,6 +114,21 @@ app.get('/api/localMarket/SouthernProvince/megasuthern', (req, res) => {
   })
 })
 
+//data retrieving on local business-Uva Province MegaSuthern Table
+app.get('/api/localMarket/UvaProvince/HalpeTea', (req, res) => {
+  database.collection('HalpeTea').find({}).toArray((err, result) => {
+    if (err) throw err
+    res.send(result)
+  })
+})
+
+app.get('/api/localMarket/UvaProvince/betterTeam', (req, res) => {
+  database.collection('BetterTeam').find({}).toArray((err, result) => {
+    if (err) throw err
+    res.send(result)
+  })
+})
+
 //data retrieving on local business-Western Province Odel Table-Fashion
 app.get('/api/localMarket/WesternProvince/Odel', (req, res) => {
   database.collection('OdelTable').find({}).toArray((err, result) => {

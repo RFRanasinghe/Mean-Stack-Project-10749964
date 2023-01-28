@@ -26,7 +26,7 @@ function SouthernContent() {
   document.getElementById("MegaId").style.fontSize = "24px";
 
   //width
-  document.getElementById("MegaId").style.width = "60.4%";
+  document.getElementById("MegaId").style.width = "60.5%";
 
   //font color
   document.getElementById("topicHead").style.color = "white";
