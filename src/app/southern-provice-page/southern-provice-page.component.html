@@ -1,0 +1,32 @@
+<body onload="SouthernContent()">
+  <div id="HeadContainer">
+    <h1 id="topicHead"></h1>
+  </div>
+
+  <div>
+    <button id="MegaId" onmouseover="MegaOnMouse()" onmouseout="MegaOutMouse()"></button>
+  </div>
+
+  <div>
+    <table mat-table class="megaTable" id="megaData">
+      <tr id="megaHeading">
+        <th>Product Category</th>
+        <th>Product price</th>
+        <th>Stock per month</th>
+        <th>Product outcome</th>
+        <th>Product income</th>
+      </tr>
+      <tr *ngFor="let mega of megaList">
+        <td>{{mega.product}}</td>
+        <td style="text-align:center">{{mega.selling_price}}</td>
+        <td><span>{{mega.stock}}</span></td>
+        <td><span>{{mega.outcome}}</span></td>
+        <td><span>{{mega.income}}</span></td>
+      </tr>
+    </table>
+  </div>
+
+  <div>
+    <img src="/assets/images/southern.png" alt="southern-market image" class="southernImage">
+  </div>
+</body>

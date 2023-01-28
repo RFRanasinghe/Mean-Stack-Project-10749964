@@ -106,6 +106,14 @@ app.get('/api/localMarket/EasternProvince/kworld', (req, res) => {
   })
 })
 
+//data retrieving on local business-Southern Province MegaSuthern Table
+app.get('/api/localMarket/SouthernProvince/megasuthern', (req, res) => {
+  database.collection('MegaSuthern').find({}).toArray((err, result) => {
+    if (err) throw err
+    res.send(result)
+  })
+})
+
 //data retrieving on local business-Western Province Odel Table-Fashion
 app.get('/api/localMarket/WesternProvince/Odel', (req, res) => {
   database.collection('OdelTable').find({}).toArray((err, result) => {

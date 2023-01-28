@@ -112,6 +112,12 @@ function NorthWesternClick() {
   window.location.href="/north-western-page";
 }
 
+//button directs to southern province page
+function SouthernClick() {
+  window.location.href="/southern-provice-page";
+}
+
+
 //mouse over function
 function HomeMouseOver() {
   document.getElementById("homeId").style.backgroundColor = "#E6A400";

@@ -30,6 +30,7 @@ import { CentralProvincePageComponent } from './central-province-page/central-pr
 import { NorthCentalProPageComponent } from './north-cental-pro-page/north-cental-pro-page.component';
 import { EasternProvincePageComponent } from './eastern-province-page/eastern-province-page.component';
 import { NorthWesternPageComponent } from './north-western-page/north-western-page.component';
+import { SouthernProvicePageComponent } from './southern-provice-page/southern-provice-page.component';
 
 @NgModule({
   declarations: [
@@ -58,6 +59,7 @@ import { NorthWesternPageComponent } from './north-western-page/north-western-pa
     NorthCentalProPageComponent,
     EasternProvincePageComponent,
     NorthWesternPageComponent,
+    SouthernProvicePageComponent,
   ],
   imports: [
     FormsModule,
@@ -88,7 +90,8 @@ import { NorthWesternPageComponent } from './north-western-page/north-western-pa
       { path: 'central-province-page', component: CentralProvincePageComponent },
       { path: 'north-central-pro-page', component: NorthCentalProPageComponent },
       { path: 'eastern-province-page', component: EasternProvincePageComponent },
-      { path: 'north-western-page', component: NorthWesternPageComponent},
+      { path: 'north-western-page', component: NorthWesternPageComponent },
+      { path: 'southern-provice-page', component: SouthernProvicePageComponent},
     ]),
   ],
   exports: [RouterModule],

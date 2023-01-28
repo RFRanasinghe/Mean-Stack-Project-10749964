@@ -56,6 +56,11 @@ private url = 'http://localhost:8080/api';
     return this.httpClient.get(this.url+'/localMarket/NorthWestern/jiffy').pipe(map(data=>data));
   }
 
+  //southern province api
+  getSouthernMegaSuthern() {
+    return this.httpClient.get(this.url+'/localMarket/SouthernProvince/megasuthern').pipe(map(data=>data));
+  }
+
   //western province api
   getWesternOdel() {
     return this.httpClient.get(this.url+'/localMarket/WesternProvince/Odel').pipe(map(data=>data))
