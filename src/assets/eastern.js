@@ -54,7 +54,16 @@ function EasternContentLoad() {
 }
   window.onload = EasternContentLoad;
 
-  //hide and show mimosa omega table content with button click
+  //omega button on mouse hover
+function OmegaOnHover() {
+  document.getElementById("omegaTopic").style.backgroundColor = "#10A19D";
+}
+
+function OmegaOutHover() {
+  document.getElementById("omegaTopic").style.backgroundColor = "#0081B4";
+  }
+
+  //hide and show omega table content with button click
 function OmegaButtonClick() {
   var x = document.getElementById("omegaData");
 
@@ -65,7 +74,7 @@ function OmegaButtonClick() {
   }
 }
 
-//hide and show mimosa omega table content with button click
+//hide and show world table content with button click
 function WorldButtonClick() {
   var x = document.getElementById("worldTable");
 

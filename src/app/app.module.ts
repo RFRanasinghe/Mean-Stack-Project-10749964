@@ -5,7 +5,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
-import { RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 import { HomePageComponent } from './home-page/home-page.component';
 import { RegisterPageComponent } from './register-page/register-page.component';
 import { LoginPageComponent } from './login-page/login-page.component';
@@ -29,6 +29,7 @@ import { BrokerNineChatComponent } from './broker-nine-chat/broker-nine-chat.com
 import { CentralProvincePageComponent } from './central-province-page/central-province-page.component';
 import { NorthCentalProPageComponent } from './north-cental-pro-page/north-cental-pro-page.component';
 import { EasternProvincePageComponent } from './eastern-province-page/eastern-province-page.component';
+import { NorthWesternPageComponent } from './north-western-page/north-western-page.component';
 
 @NgModule({
   declarations: [
@@ -56,6 +57,7 @@ import { EasternProvincePageComponent } from './eastern-province-page/eastern-pr
     CentralProvincePageComponent,
     NorthCentalProPageComponent,
     EasternProvincePageComponent,
+    NorthWesternPageComponent,
   ],
   imports: [
     FormsModule,
@@ -85,9 +87,11 @@ import { EasternProvincePageComponent } from './eastern-province-page/eastern-pr
       { path: 'broker-nine-chat', component: BrokerNineChatComponent },
       { path: 'central-province-page', component: CentralProvincePageComponent },
       { path: 'north-central-pro-page', component: NorthCentalProPageComponent },
-      { path: 'eastern-province-page', component: EasternProvincePageComponent},
+      { path: 'eastern-province-page', component: EasternProvincePageComponent },
+      { path: 'north-western-page', component: NorthWesternPageComponent},
     ]),
   ],
+  exports: [RouterModule],
   providers: [],
   bootstrap: [AppComponent]
 })

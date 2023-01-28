@@ -1,0 +1,53 @@
+<body>
+  <div id="headContainer">
+    <h1 id="northWes"></h1>
+  </div>
+
+  <div id="cycloContainer">
+    <button id="cyclomaxBtn"></button>
+  </div>
+
+  <div>
+    <table mat-table class="cycloTable" id="cycloData">
+      <tr id="cycloHeading">
+        <th>Company Client</th>
+        <th>Partnered job type</th>
+        <th>Average Project Price</th>
+        <th>Yearly target</th>
+      </tr>
+      <tr *ngFor="let cyclo of cycloList">
+        <td>{{cyclo.client}}</td>
+        <td style="text-align:center">{{cyclo.joined_Work}}</td>
+        <td><span>{{cyclo.average_price}}</span></td>
+        <td><span>{{cyclo.target}}</span></td>
+      </tr>
+    </table>
+  </div>
+
+  <div id="jiffyBtnContainer">
+    <button id="jiffyBtn"></button>
+  </div>
+
+  <div>
+    <table mat-table class="jiffyTable" id="jiffyData">
+      <tr id="jiffyHeading">
+        <th>Product Category</th>
+        <th>Stock per month</th>
+        <th>Product outcome</th>
+        <th>Product income</th>
+        <th>Product profit</th>
+      </tr>
+      <tr *ngFor="let jiffy of jiffyList">
+        <td>{{jiffy.product}}</td>
+        <td style="text-align:center">{{jiffy.monthly_stock}}</td>
+        <td><span>{{jiffy.outcome}}</span></td>
+        <td><span>{{jiffy.income}}</span></td>
+        <td><span>{{jiffy.profit}}</span></td>
+      </tr>
+    </table>
+  </div>
+
+  <div>
+    <img src="/assets/images/northWestern.png" alt="north-western image" class="northWesImage">
+  </div>
+</body>

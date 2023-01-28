@@ -47,6 +47,15 @@ private url = 'http://localhost:8080/api';
     return this.httpClient.get(this.url+'/localMarket/EasternProvince/kworld').pipe(map(data=>data));
   }
 
+  //northWestern province api
+  getNorthWesternCyclomax() {
+    return this.httpClient.get(this.url+'/localMarket/NorthWestern/cyclomax').pipe(map(data=>data));
+  }
+
+  getNorthWesJiffy() {
+    return this.httpClient.get(this.url+'/localMarket/NorthWestern/jiffy').pipe(map(data=>data));
+  }
+
   //western province api
   getWesternOdel() {
     return this.httpClient.get(this.url+'/localMarket/WesternProvince/Odel').pipe(map(data=>data))

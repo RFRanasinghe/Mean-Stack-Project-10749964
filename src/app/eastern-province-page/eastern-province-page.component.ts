@@ -5,6 +5,8 @@ import { ApiService } from '../services/api.service';
 declare var EasternContentLoad: () => any;
 declare var OmegaButtonClick: () => any;
 declare var WorldButtonClick: () => any;
+declare var OmegaOnHover: () => any;
+declare var OmegaOutHover: () => any;
 
 @Component({
   selector: 'app-eastern-province-page',
@@ -59,5 +61,13 @@ export class EasternProvincePageComponent {
 
   CallWorldButtonClick() {
     WorldButtonClick();
+  }
+
+  CallOmegaOnHover() {
+    OmegaOnHover();
+  }
+
+  CallOmegaOutHover() {
+    OmegaOutHover();
   }
 }

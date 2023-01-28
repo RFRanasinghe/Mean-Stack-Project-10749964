@@ -4,6 +4,8 @@ const socketIo = require('socket.io');
 const cors = require('cors');
 const MongoClient = require('mongodb').MongoClient;
 
+const path = require('path');
+
 const app = express();
 app.use(cors())
 app.use(express.json())
@@ -80,7 +82,23 @@ app.get('/api/localMarket/EasternProvince/omega', (req, res) => {
   })
 })
 
-//data retrieving on local business-Eastern Province KWorldSoftware Table
+//data retrieving on local business-NorthWestern Province CyclomaxIT Table
+app.get('/api/localMarket/NorthWestern/cyclomax', (req, res) => {
+  database.collection('CyclomaxIT').find({}).toArray((err, result) => {
+    if (err) throw err
+    res.send(result)
+  })
+})
+
+//data retrieving on local business-NorthWestern Province Jiffy Table
+app.get('/api/localMarket/NorthWestern/jiffy', (req, res) => {
+  database.collection('Jiffy').find({}).toArray((err, result) => {
+    if (err) throw err
+    res.send(result)
+  })
+})
+
+//data retrieving on local business-NorthWestern Province KWorldSoftware Table
 app.get('/api/localMarket/EasternProvince/kworld', (req, res) => {
   database.collection('KWorldSoftware').find({}).toArray((err, result) => {
     if (err) throw err
@@ -154,17 +172,20 @@ MongoClient.connect('mongodb://localhost:27017', { useNewUrlParser: true }, (err
   })
 });
 
-app.get('/', (req, res) => {
-  res.send("Hello port 3000")
-})
+//setup the app and the server
+const server = http.createServer(app);
 
-//socket connection
-const server = http.Server(app);
-server.listen(3000);
+//configure to use statics
+app.use(express.static(path.join(__dirname, "socket")));
 
-var io = socketIo(server); //socket setup capture the instance pass through the server
+//setup the socket server
+const io = socketIo(server);
 
-//listen for new connection and print a message in console
-io.on('connection', (socketIo) => {
-  console.log(`New Connection ${socketIo.id}`);
-})
+//on connection handler
+io.on("connection", function (socket) {
+  socket.on("send message", function (msg) {
+    socket.broadcast.emit("received message",msg);
+  });
+});
+
+server.listen(3000, () => {console.log("Socket listening on port 3000");});
