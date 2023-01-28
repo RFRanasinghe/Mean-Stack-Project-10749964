@@ -64,3 +64,25 @@ function JiffyOutMouse() {
   document.getElementById("jiffyBtn").style.backgroundColor = "#C0EEE4";
   document.getElementById("jiffyBtn").style.color = "black";
 }
+
+//hide and show cyclo table content with button click
+  function CycloButtonClick() {
+    var x = document.getElementById("cycloData");
+
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+
+  //hide and show jiffy table content with button click
+  function JiffyButtonClick() {
+    var x = document.getElementById("jiffyData");
+
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }

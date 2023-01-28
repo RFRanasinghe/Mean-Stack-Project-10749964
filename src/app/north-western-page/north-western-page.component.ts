@@ -6,6 +6,8 @@ declare var CycloOnMouse: () => any;
 declare var CycloOutMouse: () => any;
 declare var JiffyOnMouse: () => any;
 declare var JiffyOutMouse: () => any;
+declare var CycloButtonClick: () => any;
+declare var JiffyButtonClick: () => any;
 
 @Component({
   selector: 'app-north-western-page',
@@ -64,5 +66,13 @@ export class NorthWesternPageComponent {
 
   CallJiffyOutMouse() {
     JiffyOutMouse();
+  }
+
+  CallCycloButtonClick() {
+    CycloButtonClick();
+  }
+
+  CallJiffyButtonClick() {
+    JiffyButtonClick();
   }
 }
