@@ -1,0 +1,58 @@
+<body onload="SabaragamuwaContent()">
+  <div id="sabaContainer">
+    <h1 id="sabaProTopic"></h1>
+  </div>
+
+  <div>
+    <button id="kyraxBtn"></button>
+  </div>
+
+  <div>
+    <table mat-table class="kynaxTable" id="kynaxData">
+      <tr id="kynaxHeading">
+        <th>Job Category</th>
+        <th>Average price</th>
+        <th>Projects per month</th>
+        <th>Projects income</th>
+        <th>Target price</th>
+      </tr>
+      <tr *ngFor="let kynax of kynaxList">
+        <td>{{kynax.category}}</td>
+        <td style="text-align:center">{{kynax.average_price}}</td>
+        <td><span>{{kynax.monthly_projects}}</span></td>
+        <td><span>{{kynax.income}}</span></td>
+        <td><span>{{kynax.target}}</span></td>
+      </tr>
+    </table>
+  </div>
+
+  <div>
+    <button id="grapBtn"></button>
+  </div>
+
+  <div>
+    <table mat-table class="grapTable" id="grapData">
+      <tr id="grapHeading">
+        <th>Item Category</th>
+        <th>Projects per month</th>
+        <th>Project selling price</th>
+        <th>Project outcome</th>
+        <th>Project income</th>
+        <th>Project profit</th>
+      </tr>
+      <tr *ngFor="let grap of grapList">
+        <td>{{grap.category}}</td>
+        <td style="text-align:center">{{grap.num_projects}}</td>
+        <td><span>{{grap.selling_price}}</span></td>
+        <td><span>{{grap.outcome}}</span></td>
+        <td><span>{{grap.income}}</span></td>
+        <td><span>{{grap.profit}}</span></td>
+      </tr>
+    </table>
+  </div>
+
+
+  <div>
+    <img src="/assets/images/sabaragamuwa.jpg" alt="sabaragamuwa image" class="sabImage">
+  </div>
+</body>

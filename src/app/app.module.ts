@@ -33,6 +33,7 @@ import { NorthWesternPageComponent } from './north-western-page/north-western-pa
 import { SouthernProvicePageComponent } from './southern-provice-page/southern-provice-page.component';
 import { UvaProvincePageComponent } from './uva-province-page/uva-province-page.component';
 import { BrokerComponent } from './broker/broker.component';
+import { SabaragamuwaProvincePageComponent } from './sabaragamuwa-province-page/sabaragamuwa-province-page.component';
 
 @NgModule({
   declarations: [
@@ -64,6 +65,7 @@ import { BrokerComponent } from './broker/broker.component';
     SouthernProvicePageComponent,
     UvaProvincePageComponent,
     BrokerComponent,
+    SabaragamuwaProvincePageComponent,
   ],
   imports: [
     FormsModule,
@@ -98,6 +100,7 @@ import { BrokerComponent } from './broker/broker.component';
       { path: 'southern-provice-page', component: SouthernProvicePageComponent },
       { path: 'uva-province-page', component: UvaProvincePageComponent },
       { path: 'broker/:type', component: BrokerComponent },
+      { path: 'sabaragamuwa-province-page', component: SabaragamuwaProvincePageComponent},
     ]),
   ],
   exports: [RouterModule],

@@ -11,6 +11,7 @@ declare var DirectWesternProvinceFunctionClick: () => any;
 declare var NorthCentralProvinceClick: () => any;
 declare var NorthernProvinceClick: () => any;
 declare var EasternProvinceClick: () => any;
+declare var SabClick: () => any;
 declare var HomeMouseOver: () => any;
 declare var HomeMouseOut: () => any;
 declare var RegisterMouseOver: () => any;
@@ -109,6 +110,10 @@ export class LocalMarketPageComponent {
 
   CallUvaClick() {
     UvaClick();
+  }
+
+  CallSabClick() {
+    SabClick();
   }
 
   CallHomeMouseOver() {

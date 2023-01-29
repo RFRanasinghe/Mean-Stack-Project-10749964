@@ -8,8 +8,6 @@ function loadSocket(brokerType) {
     "transports": ['websocket', 'polling', 'flashsocket']
   };
 
-
-
   let socket = io(socketUrl, connectionOptions);
 
   socket.addEventListener("received message", function (msg) {

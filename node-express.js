@@ -129,6 +129,21 @@ app.get('/api/localMarket/UvaProvince/betterTeam', (req, res) => {
   })
 })
 
+//data retrieving on local business-Sabaragamuwa Province kyrax Table
+app.get('/api/localMarket/SabaragamuwaProvince/kyrax', (req, res) => {
+  database.collection('kyrax').find({}).toArray((err, result) => {
+    if (err) throw err
+    res.send(result)
+  })
+})
+
+app.get('/api/localMarket/SabaragamuwaProvince/graphite', (req, res) => {
+  database.collection('Graphite').find({}).toArray((err, result) => {
+    if (err) throw err
+    res.send(result)
+  })
+})
+
 //data retrieving on local business-Western Province Odel Table-Fashion
 app.get('/api/localMarket/WesternProvince/Odel', (req, res) => {
   database.collection('OdelTable').find({}).toArray((err, result) => {
@@ -212,7 +227,3 @@ io.on("connection", function (socket) {
 });
 
 server.listen(3000, () => {console.log("Socket listening on port 3000");});
-// server.listen(3001, () => {console.log("Socket listening on port 3001");});
-// server.listen(3002, () => {console.log("Socket listening on port 3002");});
-// server.listen(3003, () => {console.log("Socket listening on port 3003");});
-// server.listen(3004, () => {console.log("Socket listening on port 3004");});

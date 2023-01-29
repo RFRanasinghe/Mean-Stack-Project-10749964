@@ -70,6 +70,15 @@ private url = 'http://localhost:8080/api';
     return this.httpClient.get(this.url+'/localMarket/UvaProvince/betterTeam').pipe(map(data=>data));
   }
 
+  //sabaragamuwa province api
+  getSabKyrax() {
+    return this.httpClient.get(this.url+'/localMarket/SabaragamuwaProvince/kyrax').pipe(map(data=>data));
+  }
+
+  getSabSaphite() {
+    return this.httpClient.get(this.url+'/localMarket/SabaragamuwaProvince/graphite').pipe(map(data=>data));
+  }
+
   //western province api
   getWesternOdel() {
     return this.httpClient.get(this.url+'/localMarket/WesternProvince/Odel').pipe(map(data=>data))

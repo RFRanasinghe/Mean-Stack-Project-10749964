@@ -122,6 +122,11 @@ function UvaClick() {
   window.location.href="/uva-province-page";
 }
 
+//button directs to sabaragamuwa province page
+function SabClick() {
+  window.location.href="/sabaragamuwa-province-page";
+}
+
 //mouse over function
 function HomeMouseOver() {
   document.getElementById("homeId").style.backgroundColor = "#E6A400";
