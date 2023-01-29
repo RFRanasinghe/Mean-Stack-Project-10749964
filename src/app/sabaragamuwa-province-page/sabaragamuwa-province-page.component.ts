@@ -3,6 +3,12 @@ import { map } from 'rxjs/operators';
 import { ApiService } from '../services/api.service';
 
 declare var SabaragamuwaContent: () => any;
+declare var GraphOnMouse: () => any;
+declare var GraphMouseOut: () => any;
+declare var KyraxOnMouse: () => any;
+declare var KyraxMouseOut: () => any;
+declare var KyraxButtonClick: () => any;
+declare var GraphiteButtonClick: () => any;
 
 @Component({
   selector: 'app-sabaragamuwa-province-page',
@@ -49,5 +55,29 @@ export class SabaragamuwaProvincePageComponent {
 
   CallSabaragamuwaContent() {
     SabaragamuwaContent();
+  }
+
+  CallGraphOnMouse() {
+    GraphOnMouse();
+  }
+
+  CallGraphMouseOut() {
+    GraphMouseOut();
+  }
+
+  CallKyraxOnMouse() {
+    KyraxOnMouse();
+  }
+
+  CallKyraxMouseOut() {
+    KyraxMouseOut();
+  }
+
+  CallKyraxButtonClick() {
+    KyraxButtonClick();
+  }
+
+  CallGraphiteButtonClick() {
+    GraphiteButtonClick();
   }
 }

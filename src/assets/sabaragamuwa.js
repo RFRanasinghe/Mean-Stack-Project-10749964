@@ -28,6 +28,7 @@ function SabaragamuwaContent() {
   document.getElementById("sabaProTopic").style.padding = "6px";
   document.getElementById("kyraxBtn").style.padding = "6px";
   document.getElementById("grapBtn").style.padding = "6px";
+  document.getElementById("grapContainer").style.paddingTop = "10px";
 
   //margin
   document.getElementById("kyraxBtn").style.marginLeft = "600px";
@@ -44,3 +45,45 @@ function SabaragamuwaContent() {
   document.getElementById("grapBtn").style.fontSize = "24px";
 }
   window.onload = SabaragamuwaContent;
+
+  //kyrax on mouse hover function
+  function KyraxOnMouse() {
+  document.getElementById("kyraxBtn").style.backgroundColor = "#07689F";
+  }
+
+  //graphite on mouse hover function
+function GraphOnMouse() {
+    document.getElementById("grapBtn").style.backgroundColor = "#07689F";
+  }
+
+  //kyrac mouse out hover function
+  function KyraxMouseOut() {
+  document.getElementById("kyraxBtn").style.backgroundColor = "#61B15A";
+  }
+
+  //graphite mouse out hover function
+  function GraphMouseOut() {
+    document.getElementById("grapBtn").style.backgroundColor = "#61B15A";
+  }
+
+  //hide and show kyrax tec table content with button click
+  function KyraxButtonClick() {
+    var x = document.getElementById("kynaxData");
+
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+
+  //hide and show graphite table content with button click
+  function GraphiteButtonClick() {
+    var x = document.getElementById("grapData");
+
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
