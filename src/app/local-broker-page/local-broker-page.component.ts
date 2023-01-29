@@ -83,6 +83,7 @@ export class LocalBrokerPageComponent {
   }
 
   CallBroker1ChatClick() {
+
     Broker1ChatClick();
   }
 
