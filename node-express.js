@@ -18,6 +18,12 @@ app.use(function (req, res, next) {
   next();
 });
 
+const testfun = require("./testfun");
+
+app.get('/check', function (req, res) {
+  res.send(testfun.SayCheck());
+})
+
 //retrieving localBroker Details
 app.get('/api/localBroker', (req, res) => {
   database.collection('localBrokerTable').find({}).toArray((err, result) => {

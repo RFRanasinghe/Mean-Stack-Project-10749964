@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ApiService } from '../services/api.service';
+import { map } from 'rxjs/operators';
 
 declare var RegisterLoadFunction: () => any;
 declare var HomeClickPageFunction: () => any;
@@ -18,19 +19,39 @@ declare var RegisterFormValidation: () => any;
 })
 export class RegisterPageComponent {
 
+  registerList : any;
 
   fName: string = ""
+  lname: string = ""
+  mail: string = ""
+  uname: string = ""
+  address: string = ""
+  city: string = ""
+  country: string = ""
+  postalCode: string = ""
 
   constructor(private apiService: ApiService) {
-
+    this.apiService.register(this.fName).subscribe((data) => {
+      this.registerList = data;
+    });
   }
 
   register() {
     var data ={
-        fName: this.fName
-
+      fName: this.fName,
+      lName: this.lname,
+      mail: this.mail,
+      uname: this.uname,
+      address: this.address,
+      city: this.city,
+      country: this.country,
+      postalCode: this.postalCode
     }
     this.apiService.register(data).subscribe
+  }
+
+  getRegisterFormData(data: any) {
+
   }
 
   CallRegisterLoadFunction(){

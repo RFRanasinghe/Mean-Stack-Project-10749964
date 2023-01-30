@@ -28,15 +28,15 @@
   </table>
 
   <div>
-    <form name="registerForm">
+    <form #registerForm="ngForm" (ngSubmit)="getRegisterFormData(registerForm.value)">
       <table class="formTable" id="formTableId">
         <tr>
           <td class="margin" style="padding-top: 20px;"><label id="fname" class="label"></label></td>
           <td style="padding-top: 20px;"><label id="lname" class="label"></label></td>
         </tr>
         <tr>
-          <td class="margin" style="width: 600px;"><input type="text" placeholder="First Name" class="input" id="firstName" name="firstName" [(ngModel)] = "fName"><p id="fnameError"></p></td>
-          <td style="padding-left:60px;width: 600px;"><input type="text" placeholder="Last Name" class="input" id="lastName" name="lastName"><p id="lnameError"></p></td>
+          <td class="margin" style="width: 600px;"><input type="text" placeholder="First Name" class="input" id="firstName" ngModel name="firstName" [(ngModel)] = "fName"><p id="fnameError"></p></td>
+          <td style="padding-left:60px;width: 600px;"><input type="text" placeholder="Last Name" class="input" id="lastName" ngModel name="lastName"><p id="lnameError"></p></td>
         </tr>
 
         <tr>
@@ -44,15 +44,15 @@
           <td><label id="uname" class="label"></label></td>
         </tr>
         <tr>
-          <td class="margin"><input type="text" placeholder="Email Address" class="input" id="mailInput" name="email"><p id="mailError"></p></td>
-          <td><input type="text" placeholder="Username" class="input" id="usernameInput" name="userName"><p id="usernameError"></p></td>
+          <td class="margin"><input type="text" placeholder="Email Address" class="input" id="mailInput" ngModel name="email"><p id="mailError"></p></td>
+          <td><input type="text" placeholder="Username" class="input" id="usernameInput"ngModel name="userName"><p id="usernameError"></p></td>
         </tr>
 
         <tr>
           <td class="margin"><label id="address" class="label"></label></td>
         </tr>
         <tr>
-          <td class="margin"><input type="text" placeholder="Address" class="input" id="addressInput" name="address"><p id="addressError"></p></td>
+          <td class="margin"><input type="text" placeholder="Address" class="input" id="addressInput" ngModel name="address"><p id="addressError"></p></td>
         </tr>
 
         <tr>
@@ -61,9 +61,9 @@
           <td><label id="postalCode" class="label"></label></td>
         </tr>
         <tr>
-          <td class="margin"><input type="text" placeholder="City" class="input" id="cityInput" name="city"><p id="cityError"></p></td>
-          <td><input type="text" placeholder="Country" class="input" id="countryInput" name="state"><p id="stateError"></p></td>
-          <td><input type="text" placeholder="Postal Code" class="input" id="postalInput" name="postal"><p id="postalError"></p></td>
+          <td class="margin"><input type="text" placeholder="City" class="input" id="cityInput" ngModel name="city"><p id="cityError"></p></td>
+          <td><input type="text" placeholder="Country" class="input" id="countryInput" ngModel name="state"><p id="stateError"></p></td>
+          <td><input type="text" placeholder="Postal Code" class="input" id="postalInput" ngModel name="postal"><p id="postalError"></p></td>
         </tr>
       </table>
       <button id="submitButton" (click)="CallRegisterFormValidation()"></button>

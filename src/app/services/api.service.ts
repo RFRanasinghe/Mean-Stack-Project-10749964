@@ -114,9 +114,9 @@ private url = 'http://localhost:8080/api';
     return this.httpClient.get(this.url + '/globalMarket/Herm').pipe(map(data => data))
   }
 
+  //send data from register form to database
   register(data: any) {
     return this.httpClient.post(this.url+'/register',data).pipe(map(data=>data))
   }
-
 
 }
