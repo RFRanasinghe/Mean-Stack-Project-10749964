@@ -1,5 +1,24 @@
-<body onload="HomeLoadFunction()">
-	<table class="sideTable">
+<body id="bodyId" onload="HomeLoadFunction()">
+
+  <div id="coinTable">
+    <table>
+      <tr>
+        <td id="bitTd"><img src="/assets/images/bitcoin.jpg" alt="bitcoin image" id="bitImage"></td>
+        <td id="ethTd"><img src="/assets/images/etherium.jpg" alt="etherium image" id="ethImage"></td>
+      </tr>
+      <tr>
+        <td id="bitDetTd">Number of people engaged : <br>
+            Gained income as percentage : <br>
+            Currency rate : </td>
+
+        <td id="ethDetTd">Number of people engaged : <br>
+          Gained income as percentage : <br>
+          Currency rate : </td>
+      </tr>
+    </table>
+  </div>
+
+	<table id="sideTable">
     <tr>
       <td class="sideTab"><button id="homeId" class="sideButton" (click)="CallHomeAlertFunction()" onmouseover="HomeMouseOver()" onmouseout="HomeMouseOut()"></button></td>
     </tr>
@@ -23,15 +42,15 @@
     </tr>
 	</table>
 
-  <div class="topicContainer" id="topicBackground">
+  <div id="topicBackground">
     <h3 id="topicId"></h3>
   </div>
 
-  <div>
-    <table class="buttonContainer" id="buttonTable">
+  <div id="buttonTable">
+    <table>
       <tr>
-        <td><button id="localMarketButton" class="mainButton" (click)="CallLocalMarketPageFunctionClick()" onmouseover="LocalMouseOver()" onmouseout="LocalMouseOut()">Local Market</button></td>
-        <td><button id="globalMarketButton" class="mainButton" (click)="CallGlobalMarketPageFunctionClick()" onmouseover="GlobalMouseOver()" onmouseout="GlobalMouseOut()">Global Market</button></td>
+        <td id="localId"><button id="localMarketButton" (click)="CallLocalMarketPageFunctionClick()" onmouseover="LocalMouseOver()" onmouseout="LocalMouseOut()">Local Market</button></td>
+        <td id="globalId"><button id="globalMarketButton" (click)="CallGlobalMarketPageFunctionClick()" onmouseover="GlobalMouseOver()" onmouseout="GlobalMouseOut()">Global Market</button></td>
       </tr>
     </table>
   </div>
