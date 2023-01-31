@@ -31,23 +31,27 @@ export class RegisterPageComponent {
   postalCode: string = ""
 
   constructor(private apiService: ApiService) {
-    this.apiService.register(this.fName).subscribe((data) => {
-      this.registerList = data;
-    });
+
   }
 
   register() {
+
     var data ={
-      fName: this.fName,
-      lName: this.lname,
-      mail: this.mail,
-      uname: this.uname,
+      first_name: this.fName,
+      last_name: this.lname,
+      email_address: this.mail,
+      username: this.uname,
       address: this.address,
       city: this.city,
       country: this.country,
-      postalCode: this.postalCode
+      postal_code: this.postalCode
     }
-    this.apiService.register(data).subscribe
+    console.log(data);
+    this.apiService.register(data).subscribe(data => {
+      console.log("Success | "+data);
+    }, err => {
+      console.log(err);
+    })
   }
 
   getRegisterFormData(data: any) {
@@ -87,6 +91,9 @@ export class RegisterPageComponent {
   }
 
   CallRegisterFormValidation(){
-    RegisterFormValidation();
+    var isValid = RegisterFormValidation();
+    if (isValid) {
+      this.register();
+    }
   }
 }

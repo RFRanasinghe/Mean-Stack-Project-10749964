@@ -127,54 +127,74 @@ function PersonalProfileFunctionClick() {
 
 //                       register-profile form validation
 function RegisterFormValidation() {
+  var isValid = true;
 //      first name validation
  let firstName = document.forms["registerForm"]["txtfname"].value;
- if(firstName=="") {
+  if (firstName == "") {
+    isValid = false;
+   document.getElementById('submitBtn').disabled = true;
    document.getElementById("fnameError").innerHTML = "*Please enter your first name";
    document.getElementById("fnameError").style.color = "red";
  }
  //     last name validation
  let lastName = document.forms["registerForm"]["txtlname"].value;
- if(lastName=="") {
+  if (lastName == "") {
+     isValid = false;
+   document.getElementById('submitBtn').disabled = true;
    document.getElementById("lnameError").innerHTML = "*Please enter your last name";
    document.getElementById("lnameError").style.color = "red";
  }
  //   email validation
  let email = document.forms["registerForm"]["txtEmail"].value;
- if(email=="") {
+  if (email == "") {
+     isValid = false;
+   document.getElementById('submitBtn').disabled = true;
    document.getElementById("mailError").innerHTML = "*Please enter your email";
    document.getElementById("mailError").style.color = "red";
  }
 //username validation
  let username = document.forms["registerForm"]["txtUsername"].value;
- if(username=="") {
+  if (username == "") {
+     isValid = false;
+   document.getElementById('submitBtn').disabled = true;
    document.getElementById("usernameError").innerHTML = "*Please enter your username";
    document.getElementById("usernameError").style.color = "red";
  }
  //address validation
  let address = document.forms["registerForm"]["txtAddress"].value;
- if(address=="") {
+  if (address == "") {
+     isValid = false;
+   document.getElementById('submitBtn').disabled = true;
    document.getElementById("addressError").innerHTML = "*Please enter your address";
    document.getElementById("addressError").style.color = "red";
  }
  //city validation
  let city = document.forms["registerForm"]["txtCity"].value;
- if(city=="") {
+  if (city == "") {
+     isValid = false;
+   document.getElementById('submitBtn').disabled = true;
    document.getElementById("cityError").innerHTML = "*Please enter your city";
    document.getElementById("cityError").style.color = "red";
  }
  //state validation
  let state = document.forms["registerForm"]["txtCountry"].value;
- if(state=="") {
+  if (state == "") {
+     isValid = false;
+   document.getElementById('submitBtn').disabled = true;
    document.getElementById("stateError").innerHTML = "*Please enter your state";
     document.getElementById("stateError").style.color = "red";
  }
  //postal code validation
  let postalCode = document.forms["registerForm"]["txtPostCode"].value;
- if(postalCode=="") {
+  if (postalCode == "") {
+     isValid = false;
+   document.getElementById('submitBtn').disabled = true;
    document.getElementById("postalError").innerHTML = "*Please enter your postal code";
    document.getElementById("postalError").style.color = "red";
- }
+  }
+  else {
+    document.getElementById('submitBtn').disabled = false;
+    document.getElementById('sendMsg').innerHTML = "Details entered perfectly";
+  }
+  return isValid;
 }
-
-

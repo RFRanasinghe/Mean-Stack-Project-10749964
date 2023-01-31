@@ -116,7 +116,7 @@ private url = 'http://localhost:8080/api';
 
   //send data from register form to database
   register(data: any) {
-    return this.httpClient.post(this.url+'/register',data).pipe(map(data=>data))
+    return this.httpClient.post(this.url+'/registerProfiles',data).pipe(map(data=>data))
   }
 
 }

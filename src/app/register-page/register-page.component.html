@@ -12,8 +12,8 @@
         </tr>
 
         <tr>
-          <td><input type="text" id="txtFnameId" name="txtfname" placeholder="Enter your first name"><br><p id="fnameError"></p></td>
-          <td><input type="text" id="txtLnameId" name="txtlname" placeholder="Enter your last name"><br><p id="lnameError"></p></td>
+          <td><input [(ngModel)]="fName" type="text" id="txtFnameId" name="txtfname" placeholder="Enter your first name"><br><p id="fnameError"></p></td>
+          <td><input [(ngModel)]="lname" type="text" id="txtLnameId" name="txtlname" placeholder="Enter your last name"><br><p id="lnameError"></p></td>
         </tr>
 
         <tr>
@@ -22,8 +22,8 @@
         </tr>
 
         <tr>
-          <td><input type="email" id="txtEmailId" name="txtEmail" placeholder="Enter your email address"><br><p id="mailError"></p></td>
-          <td><input type="text" id="txtUsernameId" name="txtUsername" placeholder="Enter your username"><br><p id="usernameError"></p></td>
+          <td><input [(ngModel)]="mail" type="email" id="txtEmailId" name="txtEmail" placeholder="Enter your email address"><br><p id="mailError"></p></td>
+          <td><input [(ngModel)]="uname" type="text" id="txtUsernameId" name="txtUsername" placeholder="Enter your username"><br><p id="usernameError"></p></td>
         </tr>
 
         <tr>
@@ -31,7 +31,7 @@
         </tr>
 
         <tr>
-          <td><input type="text" id="txtAddressId" name="txtAddress" placeholder="Enter your address"><br><p id="addressError"></p></td>
+          <td><input [(ngModel)]="address" type="text" id="txtAddressId" name="txtAddress" placeholder="Enter your address"><br><p id="addressError"></p></td>
         </tr>
 
         <tr>
@@ -41,12 +41,13 @@
         </tr>
 
         <tr>
-          <td><input type="text" id="txtCityId" name="txtCity" placeholder="Enter your city"><br><p id="cityError"></p></td>
-          <td><input type="text" id="txtCountryId" name="txtCountry" placeholder="Enter your country"><br><p id="stateError"></p></td>
-          <td><input type="text" id="txtPostCodeId" name="txtPostCode" placeholder="Enter your post code"><br><p id="postalError"></p></td>
+          <td><input [(ngModel)]="city" type="text" id="txtCityId" name="txtCity" placeholder="Enter your city"><br><p id="cityError"></p></td>
+          <td><input [(ngModel)]="country" type="text" id="txtCountryId" name="txtCountry" placeholder="Enter your country"><br><p id="stateError"></p></td>
+          <td><input [(ngModel)]="postalCode" type="text" id="txtPostCodeId" name="txtPostCode" placeholder="Enter your post code"><br><p id="postalError"></p></td>
         </tr>
 
-        <button id="submitBtn" (click)="CallRegisterFormValidation()"></button>
+        <button id="submitBtn" (click)="CallRegisterFormValidation()"></button><br>
+        <p id="sendMsg"></p>
       </table>
     </form>
   </div>
