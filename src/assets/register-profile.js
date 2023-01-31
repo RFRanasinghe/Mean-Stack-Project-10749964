@@ -27,52 +27,74 @@ function RegisterLoadFunction()
   document.getElementById("registerTopic").style.textAlign = "center";
 
     //padding
-    //document.getElementById("topicContainerId").style.padding = "10px";
-    document.getElementById("lnameId").style.paddingLeft = "60px";
+    document.getElementById("formId").style.paddingTop = "30px";
+    document.getElementById("formId").style.paddingLeft = "60px";
+    document.getElementById("lblLname").style.paddingLeft = "100px";
+    document.getElementById("fnameTdId").style.paddingLeft = "40px";
+    document.getElementById("lnameTdId").style.paddingLeft = "120px";
+    document.getElementById("mailTdId").style.paddingLeft = "40px";
+    document.getElementById("lblUname").style.paddingLeft = "100px";
+    document.getElementById("unameTdId").style.paddingLeft = "120px";
+    document.getElementById("addTdId").style.paddingLeft = "40px";
+    document.getElementById("cityTdId").style.paddingLeft = "40px";
+    document.getElementById("lblCountry").style.paddingLeft = "100px";
+    document.getElementById("coutryTdId").style.paddingLeft = "120px";
+    document.getElementById("lblPostCode").style.paddingLeft = "100px";
+  document.getElementById("postTdId").style.paddingLeft = "120px";
+  document.getElementById("submitBtn").style.padding = "20px";
 
     //background colors
-    //document.getElementById("topicContainerId").style.backgroundColor = "#3E8E7E";
+    document.getElementById("formId").style.backgroundColor = "#EDDFB3";
 
     //border radius
-    document.getElementById("firstName").style.borderRadius = "15px";
-    document.getElementById("lastName").style.borderRadius = "15px";
-    document.getElementById("mailInput").style.borderRadius = "15px";
-    document.getElementById("usernameInput").style.borderRadius = "15px";
-    document.getElementById("addressInput").style.borderRadius = "15px";
-    document.getElementById("cityInput").style.borderRadius = "15px";
-    document.getElementById("countryInput").style.borderRadius = "15px";
-    document.getElementById("postalInput").style.borderRadius = "15px";
+    document.getElementById("txtFnameId").style.borderRadius = "15px";
+    document.getElementById("txtLnameId").style.borderRadius = "15px";
+    document.getElementById("txtEmailId").style.borderRadius = "15px";
+    document.getElementById("txtUsernameId").style.borderRadius = "15px";
+    document.getElementById("txtAddressId").style.borderRadius = "15px";
+    document.getElementById("txtCityId").style.borderRadius = "15px";
+    document.getElementById("txtCountryId").style.borderRadius = "15px";
+    document.getElementById("txtPostCodeId").style.borderRadius = "15px";
 
   //width
-  document.getElementById("fnameId").style.width = "50%";
-  document.getElementById("lnameId").style.width = "50%";
-  document.getElementById("mailInput").style.width = "50%";
-  document.getElementById("usernameInput").style.width = "50%";
-  document.getElementById("addressInput").style.width = "50%";
-  document.getElementById("cityInput").style.width = "50%";
-  document.getElementById("countryInput").style.width = "50%";
-  document.getElementById("postalInput").style.width = "50%";
-  document.getElementById("formTableId").style.width = "76.2%";
+  document.getElementById("txtFnameId").style.width = "120%";
+  document.getElementById("txtLnameId").style.width = "120%";
+  document.getElementById("txtEmailId").style.width = "120%";
+  document.getElementById("txtUsernameId").style.width = "120%";
+  document.getElementById("txtAddressId").style.width = "120%";
+  document.getElementById("txtCityId").style.width = "120%";
+  document.getElementById("txtCountryId").style.width = "120%";
+  document.getElementById("txtPostCodeId").style.width = "120%";
+  document.getElementById("submitBtn").style.width = "200%";
 
   //fontsize
-  document.getElementById("txtFnameId").style.fontSize = "20px";
-  document.getElementById("txtLnameId").style.fontSize = "20px";
-  document.getElementById("txtEmailId").style.fontSize = "20px";
-  document.getElementById("txtUsernameId").style.fontSize = "20px";
-  document.getElementById("txtAddressId").style.fontSize = "20px";
-  document.getElementById("txtCityId").style.fontSize = "20px";
-  document.getElementById("txtCountry").style.fontSize = "20px";
-  document.getElementById("txtPostCode").style.fontSize = "20px";
+  document.getElementById("lblFname").style.fontSize = "24px";
+  document.getElementById("lblLname").style.fontSize = "24px";
+  document.getElementById("lblmail").style.fontSize = "24px";
+  document.getElementById("lblUname").style.fontSize = "24px";
+  document.getElementById("lblAddress").style.fontSize = "24px";
+  document.getElementById("lblCity").style.fontSize = "24px";
+  document.getElementById("lblCountry").style.fontSize = "24px";
+  document.getElementById("lblPostCode").style.fontSize = "24px";
+  document.getElementById("txtFnameId").style.fontSize = "18px";
+  document.getElementById("txtLnameId").style.fontSize = "18px";
+  document.getElementById("txtEmailId").style.fontSize = "18px";
+  document.getElementById("txtUsernameId").style.fontSize = "18px";
+  document.getElementById("txtAddressId").style.fontSize = "18px";
+  document.getElementById("txtCityId").style.fontSize = "18px";
+  document.getElementById("txtCountryId").style.fontSize = "18px";
+  document.getElementById("txtPostCodeId").style.fontSize = "18px";
+  document.getElementById("submitBtn").style.fontSize = "24px";
 
   //height
-  document.getElementById("txtFnameId").style.height = "40px";
-  document.getElementById("txtLnameId").style.height = "40px";
-  document.getElementById("txtEmailId").style.height = "40px";
-  document.getElementById("txtUsernameId").style.height = "40px";
-  document.getElementById("txtAddressId").style.height = "40px";
-  document.getElementById("txtCityId").style.height = "40px";
-  document.getElementById("txtCountryId").style.height = "40px";
-  document.getElementById("txtPostCodeId").style.height = "40px";
+  document.getElementById("txtFnameId").style.height = "60px";
+  document.getElementById("txtLnameId").style.height = "60px";
+  document.getElementById("txtEmailId").style.height = "60px";
+  document.getElementById("txtUsernameId").style.height = "60px";
+  document.getElementById("txtAddressId").style.height = "60px";
+  document.getElementById("txtCityId").style.height = "60px";
+  document.getElementById("txtCountryId").style.height = "60px";
+  document.getElementById("txtPostCodeId").style.height = "60px";
 
   //border width
   document.getElementById("txtFnameId").style.borderWidth = "2px";
@@ -85,7 +107,7 @@ function RegisterLoadFunction()
   document.getElementById("txtPostCodeId").style.borderWidth = "2px";
 
   //margin
-  document.getElementById("formContainer").style.marginLeft = "360px";
+  document.getElementById("submitBtn").marginLeft = "600px";
   }
          window.onload = RegisterLoadFunction;
 
