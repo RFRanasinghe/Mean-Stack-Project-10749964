@@ -18,6 +18,7 @@ app.use(function (req, res, next) {
   next();
 });
 
+//TESTING FUNCTIONS > ALONG WITH testfun.js FILE
 const testfun = require("./testfun");
 
 app.get('/check', function (req, res) {
