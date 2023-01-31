@@ -19,42 +19,10 @@
   margin-left: 15px;
 }
 .topicContainer{
-  margin-left: 360px;
-  padding: 4px;
+  background-color:#3E8E7E;
+  padding: 10px;
 }
-h1{
-  text-align: center;
-  font-style: italic;
-  font-size: 30px;
+.formContainer{
+  margin-left:380px;
 }
-.formTable{
-  width: 76%;
-  margin-left: 360px;
-  border-spacing: 30px;
-  margin-top: -500px;
-}
-.label{
-  font-size:24px;
-}
-.input{
-  font-size:20px;
-  height: 40px;
-  width:100%;
-  border-color: #527318;
-  border-width: 2px;
-  font-family: "Cavolini";
-  font-style: italic;
-}
-.margin{
-  padding-left:20px;
-}
-#submitButton{
-  width: 400px;
-  height: 80px;
-  font-size: 30px;
-  font-style: italic;
-  font-weight: bold;
-  border-radius: 15px;
-  border-color: #F9C4AA;
-  margin-left: 600px;
-}
+

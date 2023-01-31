@@ -48,11 +48,19 @@ function LocalMarketPageLoadFunction()
     //alignment
     document.getElementById("topicHead").style.textAlign = "center";
 
+    //margin
+  document.getElementById("formTableId").style.marginTop = "-790px";
+  document.getElementById("formTableId").style.marginLeft = "360px";
+
     //padding
     document.getElementById("topicHead").style.padding = "8px";
 
     //width
-    document.getElementById("sideTableId").style.width = "350px";
+  document.getElementById("sideTableId").style.width = "350px";
+
+  //border radius
+  document.getElementById("firstName").style.borderRadius = "15px";
+  document.getElementById("lastName").style.borderRadius = "15px";
   }
          window.onload = LocalMarketPageLoadFunction;
 

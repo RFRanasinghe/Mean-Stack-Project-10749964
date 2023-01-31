@@ -1,6 +1,54 @@
 <body onload="RegisterLoadFunction()">
-  <div class="topicContainer" id="topicContainerId">
+  <div class="topicContainer">
     <h1 id="registerTopic"></h1>
+  </div>
+
+  <div class="formContainer">
+    <form name="registerForm">
+      <table>
+        <tr>
+          <td id="lblFname"></td>
+          <td id="lblLname"></td>
+        </tr>
+
+        <tr>
+          <td><input type="text" id="txtFnameId" name="txtfname" placeholder="Enter your first name"><br><p id="fnameError"></p></td>
+          <td><input type="text" id="txtLnameId" name="txtlname" placeholder="Enter your last name"><br><p id="lnameError"></p></td>
+        </tr>
+
+        <tr>
+          <td id="lblmail"></td>
+          <td id="lblUname"></td>
+        </tr>
+
+        <tr>
+          <td><input type="email" id="txtEmailId" name="txtEmail" placeholder="Enter your email address"><br><p id="mailError"></p></td>
+          <td><input type="text" id="txtUsernameId" name="txtUsername" placeholder="Enter your username"><br><p id="usernameError"></p></td>
+        </tr>
+
+        <tr>
+          <td id="lblAddress"></td>
+        </tr>
+
+        <tr>
+          <td><input type="text" id="txtAddressId" name="txtAddress" placeholder="Enter your address"><br><p id="addressError"></p></td>
+        </tr>
+
+        <tr>
+          <td id="lblCity"></td>
+          <td id="lblCountry"></td>
+          <td id="lblPostCode"></td>
+        </tr>
+
+        <tr>
+          <td><input type="text" id="txtCityId" name="txtCity" placeholder="Enter your city"><br><p id="cityError"></p></td>
+          <td><input type="text" id="txtCountryId" name="txtCountry" placeholder="Enter your country"><br><p id="stateError"></p></td>
+          <td><input type="text" id="txtPostCodeId" name="txtPostCode" placeholder="Enter your post code"><br><p id="postalError"></p></td>
+        </tr>
+
+        <button id="submitBtn" (click)="CallRegisterFormValidation()"></button>
+      </table>
+    </form>
   </div>
 
   <table class="sideTable">
@@ -26,48 +74,4 @@
       <td class="sideTab"><button id="PersonalId" class="sideButton" (click)="CallPersonalProfileFunctionClick()"></button></td>
     </tr>
   </table>
-
-  <div>
-    <form #registerForm="ngForm" (ngSubmit)="getRegisterFormData(registerForm.value)">
-      <table class="formTable" id="formTableId">
-        <tr>
-          <td class="margin" style="padding-top: 20px;"><label id="fname" class="label"></label></td>
-          <td style="padding-top: 20px;"><label id="lname" class="label"></label></td>
-        </tr>
-        <tr>
-          <td class="margin" style="width: 600px;"><input type="text" placeholder="First Name" class="input" id="firstName" ngModel name="firstName" [(ngModel)] = "fName"><p id="fnameError"></p></td>
-          <td style="padding-left:60px;width: 600px;"><input type="text" placeholder="Last Name" class="input" id="lastName" ngModel name="lastName"><p id="lnameError"></p></td>
-        </tr>
-
-        <tr>
-          <td class="margin"><label id="mail" class="label"></label></td>
-          <td><label id="uname" class="label"></label></td>
-        </tr>
-        <tr>
-          <td class="margin"><input type="text" placeholder="Email Address" class="input" id="mailInput" ngModel name="email"><p id="mailError"></p></td>
-          <td><input type="text" placeholder="Username" class="input" id="usernameInput"ngModel name="userName"><p id="usernameError"></p></td>
-        </tr>
-
-        <tr>
-          <td class="margin"><label id="address" class="label"></label></td>
-        </tr>
-        <tr>
-          <td class="margin"><input type="text" placeholder="Address" class="input" id="addressInput" ngModel name="address"><p id="addressError"></p></td>
-        </tr>
-
-        <tr>
-          <td class="margin"><label id="city" class="label"></label></td>
-          <td><label id="country" class="label"></label></td>
-          <td><label id="postalCode" class="label"></label></td>
-        </tr>
-        <tr>
-          <td class="margin"><input type="text" placeholder="City" class="input" id="cityInput" ngModel name="city"><p id="cityError"></p></td>
-          <td><input type="text" placeholder="Country" class="input" id="countryInput" ngModel name="state"><p id="stateError"></p></td>
-          <td><input type="text" placeholder="Postal Code" class="input" id="postalInput" ngModel name="postal"><p id="postalError"></p></td>
-        </tr>
-      </table>
-      <button id="submitButton" (click)="CallRegisterFormValidation()"></button>
-      <p id="submitMessage"></p>
-    </form>
-  </div>
 </body>
