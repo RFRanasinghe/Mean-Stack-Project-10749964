@@ -53,7 +53,7 @@ function LocalMarketPageLoadFunction()
   document.getElementById("formTableId").style.marginLeft = "360px";
 
     //padding
-    document.getElementById("topicHead").style.padding = "8px";
+    document.getElementById("topicId").style.padding = "8px";
 
     //width
   document.getElementById("sideTableId").style.width = "350px";
