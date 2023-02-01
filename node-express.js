@@ -26,36 +26,6 @@ app.get('/check', function (req, res) {
   res.send(testfun.SayCheck());
 })
 
-//register
-/*app.post('/register', function (req, res) {
-  const fname = req.body.txtfname;
-  const lname = req.body.txtlname;
-  const email = req.body.txtEmail;
-  const username = req.body.txtUsername;
-  const address = req.body.txtAddress;
-  const city = req.body.txtCity;
-  const country = req.body.txtCountry;
-  const postalCode = req.body.txtPostCode;
-
-  const data = {
-    "first_name": fname,
-    "last_name": lname,
-    "email_address": email,
-    "username": username,
-    "address": address,
-    "city": city,
-    "country": country,
-    "postal_code": postalCode,
-  }
-
-  db.collection('registerProfileTable').insertOne(data, (err, collection) => {
-    if (err) {
-      throw err;
-    }
-    console.log("Record inserted successfully");
-  });
-})*/
-
 //retrieving localBroker Details
 app.get('/api/localBroker', (req, res) => {
   database.collection('localBrokerTable').find({}).toArray((err, result) => {

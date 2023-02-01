@@ -62,4 +62,8 @@ function LoginContent() {
   document.getElementById("unamebox").style.borderRadius = "15px";
   document.getElementById("formContainer").style.borderRadius = "15px";
 }
-  window.onload = LoginContent;
+window.onload = LoginContent;
+
+function AndriaProfile() {
+  window.location.href = "/personal-profile-page";
+}

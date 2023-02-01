@@ -119,4 +119,8 @@ private url = 'http://localhost:8080/api';
     return this.httpClient.post(this.url+'/registerProfiles',data).pipe(map(data=>data))
   }
 
+  getRegisterProfile() {
+    return this.httpClient.get(this.url+'/registerProfiles').pipe(map(data=>data))
+  }
+
 }

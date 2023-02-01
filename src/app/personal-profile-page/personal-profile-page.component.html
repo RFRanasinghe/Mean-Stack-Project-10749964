@@ -1,1 +1,27 @@
-<p>personal-profile-page works!</p>
+<body onload="ProfileContent()">
+  <div id="TitleContainer">
+    <h1 id="ProTitle"></h1>
+  </div>
+
+  <div id="proContainer">
+           <table mat-table class="andriaTable" id="andriaData">
+              <tr id="andriaHeading">
+                <th>First name</th>
+                <th>Last name</th>
+                <th>Address</th>
+                <th>City</th>
+                <th>Country</th>
+                <th>Postal Code</th>
+              </tr>
+
+              <tr *ngFor="let andria of andriaList">
+                <td>{{andria.first_name}}</td>
+                <td style="text-align:center">{{andria.last_name}}</td>
+                <td><span>{{andria.address}}</span></td>
+                <td><span>{{andria.city}}</span></td>
+                <td><span>{{andria.country}}</span></td>
+                <td><span>{{andria.postal_code}}</span></td>
+              </tr>
+    </table>
+  </div>
+</body>
