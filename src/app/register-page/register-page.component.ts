@@ -11,7 +11,20 @@ declare var GlobalBrokerPageFunctionClick: () => any;
 declare var HistoryPageFunctionClick: () => any;
 declare var PersonalProfileFunctionClick: () => any;
 declare var RegisterFormValidation: () => any;
-
+declare var HomeMouseOver: () => any;
+declare var HomeMouseOut: () => any;
+declare var RegisterMouseOver: () => any;
+declare var RegisterMouseOut: () => any;
+declare var LoginMouseOver: () => any;
+declare var LoginMouseOut: () => any;
+declare var LocalBrokerMouseOver: () => any;
+declare var LocalBrokerMouseOut: () => any;
+declare var HistoryMouseOver: () => any;
+declare var HistoryMouseOut: () => any;
+declare var PersonalMouseOver: () => any;
+declare var PersonalMouseOut: () => any;
+declare var GlobalBrokerMouseOver: () => any;
+declare var GlobalBrokerMouseOut: () => any;
 @Component({
   selector: 'app-register-page',
   templateUrl: './register-page.component.html',
@@ -62,28 +75,84 @@ export class RegisterPageComponent {
     RegisterLoadFunction();
   }
 
+  CallHomeMouseOver() {
+    HomeMouseOver();
+  }
+
+  CallHomeMouseOut() {
+    HomeMouseOut();
+  }
+
   CallHomeClickPageFunction(){
     HomeClickPageFunction();
+  }
+
+  CallRegisterMouseOver() {
+    RegisterMouseOver();
+  }
+
+  CallRegisterMouseOut() {
+    RegisterMouseOut();
   }
 
   CallRegisterAlertFunction(){
     RegisterAlertFunction();
   }
 
+  CallLoginMouseOver() {
+    LoginMouseOver();
+  }
+
+  CallLoginMouseOut() {
+    LoginMouseOut();
+  }
+
   CallLoginPageFunctionClick(){
     LoginPageFunctionClick();
+  }
+
+  CallLocalBrokerMouseOver() {
+    LocalBrokerMouseOver();
+  }
+
+  CallLocalBrokerMouseOut() {
+    LocalBrokerMouseOut();
   }
 
   CallLocalBrokerPageFunctionClick(){
     LocalBrokerPageFunctionClick();
   }
 
+  CallGlobalBrokerMouseOver() {
+    GlobalBrokerMouseOver();
+  }
+
+  CallGlobalBrokerMouseOut() {
+    GlobalBrokerMouseOut();
+  }
+
   CallGlobalBrokerPageFunctionClick(){
     GlobalBrokerPageFunctionClick();
   }
 
+  CallHistoryMouseOver() {
+    HistoryMouseOver();
+  }
+
+  CallHistoryMouseOut() {
+    HistoryMouseOut();
+  }
+
   CallHistoryPageFunctionClick(){
     HistoryPageFunctionClick();
+  }
+
+  CallPersonalMouseOver() {
+    PersonalMouseOver();
+  }
+
+  CallPersonalMouseOut() {
+    PersonalMouseOut();
   }
 
   CallPersonalProfileFunctionClick(){

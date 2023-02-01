@@ -100,7 +100,10 @@ import { SabaragamuwaProvincePageComponent } from './sabaragamuwa-province-page/
       { path: 'southern-provice-page', component: SouthernProvicePageComponent },
       { path: 'uva-province-page', component: UvaProvincePageComponent },
       { path: 'broker/:type', component: BrokerComponent },
-      { path: 'sabaragamuwa-province-page', component: SabaragamuwaProvincePageComponent},
+      { path: 'sabaragamuwa-province-page', component: SabaragamuwaProvincePageComponent },
+
+      // otherwise redirect to home
+      { path: '**', redirectTo: '' }
     ]),
   ],
   exports: [RouterModule],

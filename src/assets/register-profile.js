@@ -1,7 +1,4 @@
 //                   register-profile Component          Javascript Codes
-
-/*const { style } = require("@angular/animations");*/
-
 //register-profile Page Content
 function RegisterLoadFunction()
   {
@@ -219,4 +216,83 @@ function RegisterFormValidation() {
     document.getElementById('sendMsg').innerHTML = "Details entered perfectly";
   }
   return isValid;
+}
+
+//mouse over function
+function HomeMouseOver() {
+  document.getElementById("homeId").style.backgroundColor = "#E6A400";
+}
+function RegisterMouseOver() {
+  document.getElementById("registerId").style.backgroundColor = "#E6A400";
+}
+
+function LoginMouseOver() {
+  document.getElementById("loginId").style.backgroundColor = "#E6A400";
+}
+
+function LocalBrokerMouseOver() {
+  document.getElementById("localBrokerId").style.backgroundColor = "#E6A400";
+}
+
+function GlobalBrokerMouseOver() {
+  document.getElementById("globalBrokerId").style.backgroundColor = "#E6A400";
+}
+
+function HistoryMouseOver() {
+  document.getElementById("historyId").style.backgroundColor = "#E6A400";
+}
+
+function PersonalMouseOver() {
+  document.getElementById("PersonalId").style.backgroundColor = "#E6A400";
+}
+
+function LocalMouseOver() {
+  document.getElementById("localMarketButton").style.backgroundColor = "#A2D2FF";
+  document.getElementById("localMarketButton").style.borderColor = "#A2D2FF";
+  document.getElementById("localMarketButton").style.color = "black";
+}
+
+function GlobalMouseOver() {
+  document.getElementById("globalMarketButton").style.backgroundColor = "#A2D2FF";
+  document.getElementById("globalMarketButton").style.borderColor = "#A2D2FF";
+  document.getElementById("globalMarketButton").style.color = "black";
+}
+
+//mouse out function for side bar table
+function HomeMouseOut() {
+  document.getElementById("homeId").style.backgroundColor = "#5463FF";
+}
+
+function RegisterMouseOut() {
+  document.getElementById("registerId").style.backgroundColor = "";
+}
+
+function LoginMouseOut() {
+  document.getElementById("loginId").style.backgroundColor = "";
+}
+
+function LocalBrokerMouseOut() {
+  document.getElementById("localBrokerId").style.backgroundColor = "";
+}
+
+function GlobalBrokerMouseOut() {
+  document.getElementById("globalBrokerId").style.backgroundColor = "";
+}
+
+function HistoryMouseOut() {
+  document.getElementById("historyId").style.backgroundColor = "";
+}
+
+function PersonalMouseOut() {
+  document.getElementById("PersonalId").style.backgroundColor = "";
+}
+
+function LocalMouseOut() {
+  document.getElementById("localMarketButton").style.backgroundColor = "rgb(31, 70, 144)";
+  document.getElementById("localMarketButton").style.color = "white";
+}
+
+function GlobalMouseOut() {
+  document.getElementById("globalMarketButton").style.backgroundColor = "rgb(31, 70, 144)";
+  document.getElementById("globalMarketButton").style.color = "white";
 }
