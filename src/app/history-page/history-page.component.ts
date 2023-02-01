@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+declare var HistoryContent: () => any;
+
 @Component({
   selector: 'app-history-page',
   templateUrl: './history-page.component.html',
@@ -7,4 +9,8 @@ import { Component } from '@angular/core';
 })
 export class HistoryPageComponent {
 
+
+  CallHistoryContent() {
+    HistoryContent();
+  }
 }
