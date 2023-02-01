@@ -123,4 +123,8 @@ private url = 'http://localhost:8080/api';
     return this.httpClient.get(this.url+'/registerProfiles').pipe(map(data=>data))
   }
 
+  getGlobalBroker() {
+    return this.httpClient.get(this.url+'/globalBrokers').pipe(map(data=>data))
+  }
+
 }

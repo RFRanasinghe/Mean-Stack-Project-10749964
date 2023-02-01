@@ -208,6 +208,14 @@ app.get('/api/registerProfiles', (req, res) => {
   })
 })
 
+//data retrieving on global brokers
+app.get('/api/globalBrokers', (req, res) => {
+  database.collection('globalBroker').find({}).toArray((err, result) => {
+    if (err) throw err
+    res.send(result)
+  })
+})
+
 app.post('/api/registerProfiles', (req, res) => {
   var data = req.body
   //res.send(data)

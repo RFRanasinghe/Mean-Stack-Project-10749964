@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { map } from 'rxjs/operators';
+import { ApiService } from '../services/api.service';
 
 declare var GlobalBrokerPageLoadFunction: () => any;
 declare var HomeClickPageFunction: () => any;
@@ -15,6 +17,27 @@ declare var PersonalProfileFunctionClick: () => any;
   styleUrls: ['./global-broker-page.component.css']
 })
 export class GlobalBrokerPageComponent {
+
+  globeList: any;
+
+  constructor(private apiService: ApiService) {
+
+    this.getGB()
+  }
+
+  getGB() {
+    this.apiService.getGlobalBroker().subscribe({
+      complete: () => {
+
+       },
+      error: (error) => {
+        console.log(error)
+       },
+      next:(value)=> {
+        this.globeList = value
+      },
+    })
+  }
 
   //calling function to load content of the page
   CallGlobalBrokerPageLoadFunction(){

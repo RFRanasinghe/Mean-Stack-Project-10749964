@@ -4,6 +4,25 @@
     <h1 id="globalHeading"></h1>
   </div>
 
+  <div id="globeContainer">
+    <table mat-table class="globebrokerTable" id="globebrokerData">
+      <tr id="globelHeading">
+        <th>Brand Type</th>
+        <th>Broker Id</th>
+        <th>Broker Name</th>
+        <th>Contact Number</th>
+        <th>Broker Email</th>
+      </tr>
+      <tr *ngFor="let broker of globeList">
+        <td>{{broker.brand}}</td>
+        <td style="text-align:center">{{broker.broker_id}}</td>
+        <td><span>{{broker.broker_name}}</span></td>
+        <td><span>{{broker.contact_number}}</span></td>
+        <td><span>{{broker.b_email_address}}</span></td>
+      </tr>
+    </table>
+  </div>
+
   <table class="sideTable" id="sideWidth">
     <tr>
       <td class="sideTab"><button id="homeId" class="sideButton" (click)="CallHomeClickPageFunction()"></button></td>
@@ -27,4 +46,8 @@
       <td class="sideTab"><button id="PersonalId" class="sideButton" (click)="CallPersonalProfileFunctionClick()"></button></td>
     </tr>
   </table>
+
+  <div>
+    <img src="/assets/images/globalimg.jpg" alt="globeBrokerimg" id="gbrokerId">
+  </div>
 </body>

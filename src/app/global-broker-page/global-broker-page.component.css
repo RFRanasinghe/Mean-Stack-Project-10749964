@@ -1,6 +1,7 @@
 .sideTable{
   border-spacing: 34px;
   background-color: rgb(0, 0, 0);
+  margin-top: -350px;
 }
 .sideTab {
   padding-top: 20px;
@@ -14,4 +15,12 @@
   background-color: rgb(207, 10, 10);
   border-color: rgb(207, 10, 10);
   color: rgb(238, 238, 238);
+}
+.globebrokerTable th,
+td {
+  padding-top: 5px;
+  padding-bottom: 40px;
+  padding-left: 20px;
+  padding-right: 40px;
+  text-align: center;
 }

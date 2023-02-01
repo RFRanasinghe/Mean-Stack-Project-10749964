@@ -19,7 +19,10 @@ function GlobalBrokerPageLoadFunction()
     document.getElementById("headingContainer").style.backgroundColor = "#21209C";
 
     //font color
-    document.getElementById("globalHeading").style.color = "white";
+  document.getElementById("globalHeading").style.color = "white";
+
+  //font size
+  document.getElementById("globelHeading").style.fontSize = "30px";
 
     //text alignment
     document.getElementById("globalHeading").style.textAlign = "center";
@@ -35,7 +38,11 @@ function GlobalBrokerPageLoadFunction()
     document.getElementById("localBrokerId").style.width = "90%";
     document.getElementById("globalBrokerId").style.width = "90%";
     document.getElementById("historyId").style.width = "90%";
-    document.getElementById("PersonalId").style.width = "90%";
+  document.getElementById("PersonalId").style.width = "90%";
+  document.getElementById("gbrokerId").style.width = "1000px";
+
+  //height
+  document.getElementById("gbrokerId").style.height = "500px";
 
     //margin
   document.getElementById("homeId").style.marginLeft = "15px";
@@ -45,6 +52,9 @@ function GlobalBrokerPageLoadFunction()
   document.getElementById("globalBrokerId").style.marginLeft = "15px";
   document.getElementById("historyId").style.marginLeft = "15px";
   document.getElementById("PersonalId").style.marginLeft = "15px";
+  document.getElementById("globeContainer").style.marginLeft = "400px";
+  document.getElementById("gbrokerId").style.marginLeft = "440px";
+  document.getElementById("gbrokerId").style.marginTop = "-560px";
   }
          window.onload = GlobalBrokerPageLoadFunction;
 
